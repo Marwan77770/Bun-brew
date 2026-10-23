@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-surface-variant": "#504441", "on-primary-fixed": "#2b160f", "error": "#ba1a1a", "on-secondary-container": "#7a5840", "inverse-primary": "#e4beb2", "surface-container-low": "#f8f3ea", "on-tertiary-fixed-variant": "#683c11", "tertiary-fixed-dim": "#fab983", "secondary": "#79573f", "surface-variant": "#e7e2d9", "on-tertiary-container": "#be8453", "secondary-container": "#ffd1b3", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "tertiary-container": "#432100", "on-tertiary-fixed": "#2e1500", "on-secondary-fixed": "#2d1604", "outline-variant": "#d4c3be", "secondary-fixed-dim": "#eabda0", "on-primary-container": "#ab897e", "on-secondary-fixed-variant": "#5f402a", "on-primary-fixed-variant": "#5b4037", "secondary-fixed": "#ffdcc6", "tertiary": "#251000", "background": "#fef9f0", "surface-container": "#f2ede4", "surface-container-high": "#ece8df", "on-surface": "#1d1c16", "surface-bright": "#fef9f0", "on-secondary": "#ffffff", "surface-tint": "#75584e", "on-error": "#ffffff", "surface-container-highest": "#e7e2d9", "inverse-surface": "#32302b", "primary-container": "#3b241c", "surface-dim": "#ded9d1", "on-background": "#1d1c16", "on-primary": "#ffffff", "tertiary-fixed": "#ffdcc2", "primary-fixed": "#ffdbcf", "outline": "#827470", "primary": "#241009", "on-error-container": "#93000a", "surface": "#fef9f0", "primary-fixed-dim": "#e4beb2", "inverse-on-surface": "#f5f0e7" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-[0_4px_16px_rgba(59,36,28,0.08)]"><span class="material-symbols-outlined text-[22px]">local_cafe</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">BUN &amp; BREW</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Artisanal Roastery</span></div></div><div class="px-space-md py-space-xs"><div class="bg-surface-container rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">store</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Active Location</span><span class="font-label-md text-label-md text-on-surface">Downtown Flagship</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md rounded-xl"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-label-md rounded-xl" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-md text-label-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="products-and-menu" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-md text-label-md">Products &amp; Menu</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="categories" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Categories</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="orders" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label-md text-label-md">Orders</span></div><span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">12 Active</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customers" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Customers</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="offers-and-discounts" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">loyalty</span><span class="font-label-md text-label-md">Offers &amp; Discounts</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="coffee-expert-system" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">Coffee Expert System</span></div><span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">AI Rules</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recipes-and-ingredients" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">skillet</span><span class="font-label-md text-label-md">Recipes &amp; Ingredients</span></div><span class="px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm flex items-center gap-0.5"><span class="material-symbols-outlined text-[13px]">warning</span>Low</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="font-label-md text-label-md">Analytics</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Settings</span></div></a></nav></div><div class="p-space-md"><div class="bg-surface-container rounded-xl p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Sarah Jenkins</span><span class="font-body-sm text-body-sm text-on-surface-variant">Store Manager</span></div></div><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full h-12 pl-11 pr-space-md bg-surface-container-lowest rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant shadow-[0_2px_8px_rgba(59,36,28,0.04)] focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Search orders, products, baristas, recipes..." type="text"/></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Downtown Roastery • Live Sync Active</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><button class="h-11 px-space-md rounded-full bg-surface-container text-primary font-label-md text-label-md flex items-center gap-space-xs hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px]">add</span><span>Add Product</span></button><button class="h-11 px-space-md rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs hover:bg-primary-container transition-colors shadow-[0_4px_12px_rgba(59,36,28,0.14)]"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>New Order</span></button></div><div class="relative"><button class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface"></span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 bg-background min-h-screen px-space-xl py-space-lg w-full"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Greeting & Live Store Banner -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-2xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Good morning, Manager Sarah!</h1>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          Rush Hour (8:00 AM – 11:30 AM)
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">pin_drop</span>
+        Downtown Roastery Branch (Bldg B) • Live Barista Line Active (Station 1–4)
+      </p>
+</div>
+<!-- Date Filter Pills & Quick Actions -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="inline-flex p-1 bg-surface-container rounded-full shadow-inner" id="dateFilterGroup">
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm" onclick="setDateFilter(this, 'Today')">Today</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" onclick="setDateFilter(this, '7D')">Last 7 Days</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" onclick="setDateFilter(this, 'MTD')">Month to Date</button>
+</div>
+<button class="h-10 px-space-md rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-variant font-label-sm text-label-sm flex items-center gap-1.5 transition-colors shadow-sm" onclick="triggerExportToast()">
+<span class="material-symbols-outlined text-[17px]">download</span>
+        Export Report
+      </button>
+<button class="h-10 px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm flex items-center gap-1.5 transition-all shadow-md" onclick="toggleQuickOrderModal(true)">
+<span class="material-symbols-outlined text-[17px]">bolt</span>
+        Quick Order
+      </button>
+<button class="h-10 w-10 rounded-full bg-surface-container text-error hover:bg-error-container hover:text-on-error-container flex items-center justify-center transition-colors shadow-sm" onclick="triggerRoastAlert()" title="Trigger Roastery Emergency Alert">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- KPI Cards Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Card 1: Sales -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Sales Today</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">$4,892.50</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+14.2%</span>
+<span class="text-on-surface-variant font-normal">vs yesterday</span>
+</div>
+</div>
+<div class="h-9 w-full">
+<!-- Sparkline -->
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 100 28">
+<path d="M0 24 Q 15 22, 28 15 T 50 16 T 72 7 T 100 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 24 Q 15 22, 28 15 T 50 16 T 72 7 T 100 3 L 100 28 L 0 28 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Orders -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Orders</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">418 Orders</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="font-semibold">+8.5%</span>
+<span class="text-on-surface-variant font-normal">avg ticket $11.70</span>
+</div>
+</div>
+<div class="h-9 w-full">
+<svg class="w-full h-full text-on-secondary-container" fill="none" viewbox="0 0 100 28">
+<path d="M0 22 Q 20 20, 35 12 T 65 14 T 85 8 T 100 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 22 Q 20 20, 35 12 T 65 14 T 85 8 T 100 4 L 100 28 L 0 28 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3: Active Live Queue -->
+<div class="bg-primary-container text-on-primary p-space-md rounded-2xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Live Queue</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-ping"></span>
+          Live
+        </div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg tracking-tight">14 In-Progress</span>
+<div class="flex items-center gap-2 mt-1 font-body-sm text-body-sm text-surface-variant">
+<span>6 Brewing</span> • <span>5 Warming</span> • <span>3 Ready</span>
+</div>
+</div>
+<!-- Mini Bar Tracker -->
+<div class="w-full bg-primary rounded-full h-2 flex overflow-hidden">
+<div class="bg-secondary-container h-full" style="width: 43%" title="Brewing"></div>
+<div class="bg-secondary h-full" style="width: 36%" title="Pastry Warming"></div>
+<div class="bg-surface-bright h-full" style="width: 21%" title="Ready"></div>
+</div>
+</div>
+<!-- Card 4: Total Guests & Loyalty -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Customers</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">1,280 Guests</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">loyalty</span>
+<span class="font-semibold">64%</span>
+<span class="text-on-surface-variant font-normal">Loyalty Repeat</span>
+</div>
+</div>
+<div class="h-9 w-full">
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 100 28">
+<path d="M0 26 Q 25 18, 45 20 T 75 10 T 100 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 26 Q 25 18, 45 20 T 75 10 T 100 6 L 100 28 L 0 28 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+<!-- Card 5: Net Margin -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Net Roastery Margin</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">pie_chart</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">$3,620.10</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">coffee_maker</span>
+<span class="font-semibold">74.0%</span>
+<span class="text-on-surface-variant font-normal">Single-Origin Roast</span>
+</div>
+</div>
+<div class="h-9 w-full">
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 100 28">
+<path d="M0 20 Q 30 18, 55 12 T 80 8 T 100 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 20 Q 30 18, 55 12 T 80 8 T 100 3 L 100 28 L 0 28 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Main Analytical 2-Column Split (70% / 30%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (8 cols out of 12 ~ 67-70%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Chart Area Container -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<!-- Chart Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Hourly Sales &amp; Rush Velocity</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time revenue curve compared to yesterday's espresso throughput</p>
+</div>
+<!-- View Toggle -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl self-start sm:self-auto">
+<button class="px-space-sm py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-xs font-semibold" onclick="switchChartTab(this, 'rev')">Hourly Revenue</button>
+<button class="px-space-sm py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" onclick="switchChartTab(this, 'bev')">Drink vs Bakery</button>
+<button class="px-space-sm py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" onclick="switchChartTab(this, 'pass')">Dine-in vs Pickup</button>
+</div>
+</div>
+<!-- Metric Callout Chips -->
+<div class="flex items-center gap-space-md flex-wrap py-space-xs bg-surface-container-low px-space-md rounded-xl">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today's Revenue Peak:</span>
+<span class="font-label-md text-label-md text-primary">10:15 AM ($640/hr)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday Parallel:</span>
+<span class="font-label-md text-label-md text-on-surface">8:45 AM ($512/hr)</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-semibold">Top Pour: Spanish Latte (142 cups)</span>
+</div>
+</div>
+<!-- SVG Multi-Line Rush Graph -->
+<div class="w-full h-64 relative flex flex-col justify-end pt-4">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 220">
+<defs>
+<lineargradient id="todayGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#3B241C" stop-opacity="0.32"></stop>
+<stop offset="100%" stop-color="#3B241C" stop-opacity="0.00"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#E7E2D9" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="180" y2="180"></line>
+<line stroke="#E7E2D9" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="120" y2="120"></line>
+<line stroke="#E7E2D9" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="60" y2="60"></line>
+<!-- Yesterday's Reference (Dashed Curve) -->
+<path d="M 20 180 C 80 170, 110 130, 160 85 C 210 40, 240 100, 300 110 C 360 120, 420 70, 480 90 C 540 110, 600 140, 680 150" fill="none" stroke="#D4C3BE" stroke-dasharray="6 6" stroke-width="2.5"></path>
+<!-- Today's Filled Gradient Area -->
+<path d="M 20 180 C 70 160, 110 90, 160 50 C 210 10, 250 80, 310 95 C 370 110, 410 40, 470 25 C 530 10, 580 85, 680 110 L 680 190 L 20 190 Z" fill="url(#todayGrad)"></path>
+<!-- Today's Bold Curve -->
+<path d="M 20 180 C 70 160, 110 90, 160 50 C 210 10, 250 80, 310 95 C 370 110, 410 40, 470 25 C 530 10, 580 85, 680 110" fill="none" stroke="#3B241C" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Hot Peak Pins -->
+<!-- 8:30 Rush Point -->
+<circle cx="160" cy="50" fill="#3B241C" r="5" stroke="#FEF9F0" stroke-width="2"></circle>
+<!-- 10:15 Peak Point -->
+<circle cx="470" cy="25" fill="#79573f" r="6" stroke="#FEF9F0" stroke-width="2.5"></circle>
+</svg>
+<!-- Timeline X-Axis Labels -->
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm pt-2 border-t border-surface-container">
+<span>6:00 AM</span>
+<span>7:30 AM</span>
+<span class="font-semibold text-primary">8:30 AM (Rush)</span>
+<span>9:30 AM</span>
+<span class="font-semibold text-secondary">10:15 AM (Peak $640)</span>
+<span>11:30 AM</span>
+<span>1:00 PM</span>
+<span>3:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Live Active Orders Table -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">Active Live Orders</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold" id="orderCountBadge">14 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live baristamatic fulfillment queue &amp; handcraft dispatch</p>
+</div>
+<!-- Table Search -->
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-full bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary" id="orderSearchInput" oninput="filterOrders(this.value)" placeholder="Filter by ID, guest..." type="text"/>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1" id="orderFilterTabs">
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap shadow-xs" onclick="setOrderStatusTab(this, 'all')">All Orders (14)</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap" onclick="setOrderStatusTab(this, 'brewing')">Brewing &amp; Handcraft (6)</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap" onclick="setOrderStatusTab(this, 'pickup')">Ready for Pickup (3)</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap" onclick="setOrderStatusTab(this, 'completed')">Completed Today (395)</button>
+</div>
+<!-- Orders Table Wrapper -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low rounded-xl">
+<th class="py-2.5 px-3 rounded-l-xl">Order ID</th>
+<th class="py-2.5 px-3">Guest &amp; Tier</th>
+<th class="py-2.5 px-3">Configured Items</th>
+<th class="py-2.5 px-3">Total</th>
+<th class="py-2.5 px-3">Channel</th>
+<th class="py-2.5 px-3">Elapsed</th>
+<th class="py-2.5 px-3">Status</th>
+<th class="py-2.5 px-3 text-right rounded-r-xl">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container" id="ordersTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors" data-query="8921 sarah jenkins spanish latte" data-status="brewing">
+<td class="py-3 px-3 font-label-md text-label-md text-primary">#BB-8921</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Sarah Jenkins</span>
+<span class="font-label-sm text-label-sm text-secondary">Gold Member • App</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">1x Spanish Latte (Iced, Oat, 3 Shots)</span>
+<span class="text-on-surface-variant text-xs">1x Pistachio Brioche (Warmed)</span>
+</div>
+</td>
+<td class="py-3 px-3 font-label-md text-label-md text-primary">$13.75</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">takeout_dining</span> Bay 3
+                  </span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">2m ago</td>
+<td class="py-3 px-3">
+<span class="status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                    Brewing
+                  </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all" onclick="advanceOrderStatus(this)" title="Mark Ready">
+                      Ready
+                    </button>
+<button class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="printTicket('#BB-8921')" title="Print Barista Ticket">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors" data-query="8920 marcus vance flat white" data-status="brewing">
+<td class="py-3 px-3 font-label-md text-label-md text-primary">#BB-8920</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Marcus Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guest • Express Pass</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="text-on-surface font-medium">2x Flat White (Whole Milk, Extra Hot)</span>
+</td>
+<td class="py-3 px-3 font-label-md text-label-md text-primary">$11.50</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">storefront</span> Counter
+                  </span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">4m ago</td>
+<td class="py-3 px-3">
+<span class="status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                    Brewing
+                  </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all" onclick="advanceOrderStatus(this)">
+                      Ready
+                    </button>
+<button class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="printTicket('#BB-8920')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors" data-query="8919 emily chen cold brew cruffin" data-status="pickup">
+<td class="py-3 px-3 font-label-md text-label-md text-primary">#BB-8919</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dr. Emily Chen</span>
+<span class="font-label-sm text-label-sm text-secondary">Faculty Perk (20%)</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">1x Cold Brew Reserve (Single Origin)</span>
+<span class="text-on-surface-variant text-xs">1x Cinnamon Cruffin</span>
+</div>
+</td>
+<td class="py-3 px-3 font-label-md text-label-md text-primary">$8.95</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">takeout_dining</span> Bay 1
+                  </span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">7m ago</td>
+<td class="py-3 px-3">
+<span class="status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                    Ready for Pickup
+                  </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm hover:bg-secondary/90 transition-all" onclick="completeOrder(this)">
+                      Hand Off
+                    </button>
+<button class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="printTicket('#BB-8919')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors" data-query="8918 liam keller cortado croissant" data-status="brewing">
+<td class="py-3 px-3 font-label-md text-label-md text-primary">#BB-8918</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Liam Keller</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Walk-in • Cashless</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="text-on-surface font-medium">1x Gibraltar Cortado, 1x Almond Croissant</span>
+</td>
+<td class="py-3 px-3 font-label-md text-label-md text-primary">$10.20</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">table_restaurant</span> Dine-in T-4
+                  </span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">9m ago</td>
+<td class="py-3 px-3">
+<span class="status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                    Brewing
+                  </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all" onclick="advanceOrderStatus(this)">
+                      Ready
+                    </button>
+<button class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="printTicket('#BB-8918')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors" data-query="8917 alivia zhang pour over ethiopia" data-status="pickup">
+<td class="py-3 px-3 font-label-md text-label-md text-primary">#BB-8917</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Alivia Zhang</span>
+<span class="font-label-sm text-label-sm text-secondary">Coffee Club VIP</span>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="text-on-surface font-medium">1x V60 Pour Over (Ethiopia Yirgacheffe)</span>
+</td>
+<td class="py-3 px-3 font-label-md text-label-md text-primary">$7.50</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">takeout_dining</span> Bay 2
+                  </span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">12m ago</td>
+<td class="py-3 px-3">
+<span class="status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+                    Ready for Pickup
+                  </span>
+</td>
+<td class="py-3 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm hover:bg-secondary/90 transition-all" onclick="completeOrder(this)">
+                      Hand Off
+                    </button>
+<button class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="printTicket('#BB-8917')">
+<span class="material-symbols-outlined text-[16px]">print</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (4 cols out of 12 ~ 30-33%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Best-Selling Menu Items Widget -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Best-Selling Today</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Top artisanal roasts &amp; bakery draws</p>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-xs" data-alt="An artisanal iced Spanish latte served in a minimalist fluted glassware with layers of condensed milk, velvety espresso crema, and fresh oat milk foam on a warm marble cafe counter with soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCniIkLOIODjM8R_usIB2TcNa7SevUGVhcTM3aGTOp8AUTDulN39Tb3y9A1tKMPKWc_7inVUKUFKpuhFUOfevIMX9MFZ6F7FWVn5g4pakNVPg7OAReEVWWcgdiE_RorSsE69PbGr9zxROO6JyTKOBI3HzNdETQAQVBZm9n7y01Zk325bmJkQXKHmWBHcG4gysYMehb9mpdbfQklm8GYNC86Z5vCwRK9TlvSmgbIlvMVq4CEb4pqeH1z"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">#1 Spanish Latte</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">142 orders • $1,242.50</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+18%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hot / Iced</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-xs" data-alt="Golden baked Parisian brioche roll filled with pale green pistachio ganache and topped with crushed Iranian pistachios, placed on artisanal warm cream ceramic plate with soft morning shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeflF9wggW5Hs1Z063a_Qqbh61DGwmE97KxaRRAGN4pOD-RckX53QCsNkxSi05T9-gcRNrRMEeIhKdm5o_LZ_BcDpMBzGrJmFIC9xuonihILiu5nS-ECPyM4AgVcJghqmYMt1eEewuuIachbTLQyOOq_CD2DGT8KRQzErAzYB7ZGWeL9Dhk77xJXzI6acY7QyURfOBNd-KZKBxcLKoVgSLcZQ9y2DKyTydmCayXrsljXxQG3LRLLEK"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">#2 Pistachio Brioche</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">98 orders • $411.60</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Fresh Bake</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch #4</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-xs" data-alt="Single-origin slow-drip cold brew coffee in a heavy clear tumbler with an oversized crystal clear ice sphere, amber and dark mahogany reflections, next to roasted coffee beans on a walnut surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNocO-hPicoXTCUkIJuUYO5ROAqWtHFqxQTeG8rfvV02BfoBm9mEpLZsm2GADA9gbHD8L2RX9EtiFZy3folkcIU5UIZeUWcIpm7xl-JDZP9qFDxBaDFl8Yw58oOZ4Uv6TldxeumNd-1Gp_X1s0IGfJRPoLRdDCZdEOWTMShBA--ycJS8UEugD4ScnOb0C56coKWDdj2cWZ9lpXOnjJmaQ-7qv4BsAqt4dXDhmTMMcuswc3aWsLavhN"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">#3 Cold Brew Reserve</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">74 orders • $355.20</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">18h Steep</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Single Origin</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">coffee</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">#4 Flat White Ristretto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">62 orders • $294.50</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+9%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Microfoam</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">bakery_dining</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">#5 Cinnamon Cruffin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">51 orders • $127.50</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pastry Station</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Low batch</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Low Stock Ingredients & Roastery Alert -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md border-l-4 border-l-secondary">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Stock &amp; Batch Alerts</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">3 Critical</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item Alert 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Single-Origin Gesha Beans</span>
+<span class="font-label-sm text-label-sm text-error font-bold">1.8 kg Left</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reorder threshold: 3.0 kg. Current depletion pace will exhaust stock by 2:00 PM rush.</p>
+<div class="flex items-center justify-between mt-1">
+<div class="w-32 bg-surface-variant rounded-full h-1.5 overflow-hidden">
+<div class="bg-error h-full" style="width: 25%"></div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary underline font-semibold" onclick="triggerOrderRefill('Gesha Beans')">
+                Auto-Order Batch →
+              </button>
+</div>
+</div>
+<!-- Item Alert 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Barista Oat Milk (Oatly)</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-bold">6 Cartons</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estimated dry-out in ~2.5 hrs based on 42% oat substitution rate.</p>
+<div class="flex items-center justify-between mt-1">
+<div class="w-32 bg-surface-variant rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full" style="width: 35%"></div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary underline font-semibold" onclick="triggerOrderRefill('Oat Milk')">
+                Transfer from Depot →
+              </button>
+</div>
+</div>
+<!-- Item Alert 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary">Pistachio Butter Glaze</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">850g Left</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Next afternoon pastry batch requires minimum 1.2 kg.</p>
+<div class="flex items-center justify-between mt-1">
+<div class="w-32 bg-surface-variant rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full" style="width: 45%"></div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary underline font-semibold" onclick="triggerOrderRefill('Pistachio Glaze')">
+                Prep Alert →
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Coffee Expert System Telemetry (AI Rules Widget) -->
+<div class="bg-primary text-on-primary p-space-lg rounded-2xl shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Coffee Expert System</h3>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim">Decision Tree Inference Engine</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-label-sm text-label-sm">v2.4 Active</span>
+</div>
+<!-- Telemetry Stats -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-primary-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Concierge Runs</span>
+<span class="font-headline-md text-headline-md text-on-primary mt-1">184 Today</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim mt-0.5">+31% vs avg</span>
+</div>
+<div class="p-space-sm rounded-xl bg-primary-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Conversion to Cart</span>
+<span class="font-headline-md text-headline-md text-on-primary mt-1">78.4%</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim mt-0.5">High precision</span>
+</div>
+</div>
+<!-- Top Rule Match Block -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest/10 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Top Fired Rule:</span>
+<p class="font-body-sm text-body-sm text-on-primary leading-snug">
+<span class="font-semibold text-secondary-fixed">Rule #1:</span> [Iced] &amp; [Oat Milk] &amp; [Smooth/Sweet] → <span class="underline decoration-secondary-fixed">Spanish Latte / Iced Vanilla</span>
+</p>
+<span class="font-label-sm text-label-sm text-on-primary-container">Captured 42% of automated customer queries today</span>
+</div>
+<button class="w-full py-2 rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 font-label-sm text-label-sm text-on-primary flex items-center justify-center gap-1.5 transition-colors" onclick="alert('Navigating to Expert Rules Knowledge Base Editor...')">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+          Tune Decision Weights
+        </button>
+</div>
+</div>
+</div>
+<!-- Quick Order Modal (Interactive Overlay) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-space-md" id="quickOrderModal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl w-full max-w-lg p-space-lg flex flex-col gap-space-md transform transition-transform animate-in fade-in">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">point_of_sale</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Rapid Barista Quick Order</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct express POS insertion for counter rush</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleQuickOrderModal(false)">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Customer / Guest Identifier</label>
+<input class="w-full h-11 px-space-md bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" id="quickCustName" placeholder="e.g. David Ross (Walk-in)" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Select Preset Item</label>
+<select class="w-full h-11 px-space-md bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary" id="quickItemSelect">
+<option value="Signature Spanish Latte ($6.50)">Signature Spanish Latte • $6.50</option>
+<option value="Single-Origin Cold Brew ($5.50)">Single-Origin Cold Brew • $5.50</option>
+<option value="Flat White Ristretto ($5.25)">Flat White Ristretto • $5.25</option>
+<option value="Pistachio Brioche ($4.75)">Pistachio Brioche • $4.75</option>
+<option value="V60 Single Pour ($6.00)">V60 Single Pour Over • $6.00</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Milk Prep</label>
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>Barista Oat Milk</option>
+<option>Whole Milk Organic</option>
+<option>Almond Milk</option>
+<option>None (Black)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Fulfillment Spot</label>
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>Express Pickup Bay 1</option>
+<option>Counter Pickup</option>
+<option>Dine-in Floor</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container">
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface" onclick="toggleQuickOrderModal(false)">Cancel</button>
+<button class="px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md flex items-center gap-1.5" onclick="submitQuickOrder()">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+          Dispatch to Barista Queue
+        </button>
+</div>
+</div>
+</div>
+<!-- Live Toast Notification Container -->
+<div class="fixed bottom-6 right-6 bg-primary text-on-primary px-space-md py-space-sm rounded-2xl shadow-xl flex items-center gap-space-sm z-50 transition-all duration-300 opacity-0 pointer-events-none translate-y-3" id="liveToast">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold" id="toastTitle">Order Updated</span>
+<span class="font-body-sm text-body-sm text-surface-variant" id="toastMessage">Ticket dispatched to prep line</span>
+</div>
+</div>
+<!-- Client-side Interactive Functionality Script -->
+<script>
+    function showToast(title, message) {
+      const toast = document.getElementById('liveToast');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 3200);
+    }
+
+    function setDateFilter(btn, range) {
+      const parent = btn.parentElement;
+      Array.from(parent.children).forEach(b => {
+        b.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-all shadow-sm';
+      showToast('Date Range Changed', `Metrics refreshed for ${range}`);
+    }
+
+    function switchChartTab(btn, mode) {
+      const group = btn.parentElement;
+      Array.from(group.children).forEach(b => {
+        b.className = 'px-space-sm py-1 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface';
+      });
+      btn.className = 'px-space-sm py-1 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-xs font-semibold';
+      showToast('Chart View Updated', `Now displaying: ${btn.textContent}`);
+    }
+
+    function setOrderStatusTab(btn, status) {
+      const container = document.getElementById('orderFilterTabs');
+      Array.from(container.children).forEach(b => {
+        b.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:text-on-surface whitespace-nowrap';
+      });
+      btn.className = 'px-space-md py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary whitespace-nowrap shadow-xs';
+
+      const rows = document.querySelectorAll('#ordersTableBody tr');
+      rows.forEach(r => {
+        if (status === 'all') {
+          r.style.display = '';
+        } else if (r.getAttribute('data-status') === status) {
+          r.style.display = '';
+        } else {
+          r.style.display = 'none';
+        }
+      });
+    }
+
+    function filterOrders(query) {
+      const q = query.toLowerCase();
+      const rows = document.querySelectorAll('#ordersTableBody tr');
+      rows.forEach(row => {
+        const text = row.getAttribute('data-query') || '';
+        if (text.includes(q)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function advanceOrderStatus(btn) {
+      const row = btn.closest('tr');
+      row.setAttribute('data-status', 'pickup');
+      const badge = row.querySelector('.status-badge');
+      badge.className = 'status-badge inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold';
+      badge.innerHTML = '<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Ready for Pickup';
+      btn.textContent = 'Hand Off';
+      btn.className = 'px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm hover:bg-secondary/90 transition-all';
+      btn.setAttribute('onclick', 'completeOrder(this)');
+      showToast('Status Advanced', 'Order marked ready at pickup counter');
+    }
+
+    function completeOrder(btn) {
+      const row = btn.closest('tr');
+      row.style.opacity = '0.35';
+      row.style.pointerEvents = 'none';
+      btn.textContent = 'Archived';
+      btn.disabled = true;
+      showToast('Order Complete', 'Customer picked up beverage ticket successfully');
+    }
+
+    function printTicket(id) {
+      showToast('Printing Ticket', `Thermal print job sent for ${id} to Barista Line 1`);
+    }
+
+    function triggerRoastAlert() {
+      showToast('Alert Broadcast', 'Emergency notification dispatched to head roaster on shift');
+    }
+
+    function triggerOrderRefill(item) {
+      showToast('Depot Order Sent', `Automated restock PO generated for ${item}`);
+    }
+
+    function triggerExportToast() {
+      showToast('Report Generated', 'Downloading PDF/CSV Downtown Store Audit...');
+    }
+
+    function toggleQuickOrderModal(open) {
+      const modal = document.getElementById('quickOrderModal');
+      if (open) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function submitQuickOrder() {
+      const cust = document.getElementById('quickCustName').value || 'Express Guest';
+      const item = document.getElementById('quickItemSelect').value;
+      toggleQuickOrderModal(false);
+      showToast('Queue Injected', `${cust} added: ${item}`);
+    }
+  </script>
+</div></main></div></body></html>

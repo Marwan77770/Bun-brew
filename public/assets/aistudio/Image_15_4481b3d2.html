@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1d1c16", "surface-dim": "#ded9d1", "on-secondary": "#ffffff", "on-primary": "#ffffff", "tertiary": "#251000", "tertiary-container": "#432100", "surface-variant": "#e7e2d9", "primary-container": "#3b241c", "on-error-container": "#93000a", "surface-container-low": "#f8f3ea", "on-background": "#1d1c16", "error": "#ba1a1a", "on-primary-container": "#ab897e", "tertiary-fixed-dim": "#fab983", "error-container": "#ffdad6", "on-secondary-container": "#7a5840", "outline-variant": "#d4c3be", "secondary-fixed-dim": "#eabda0", "on-primary-fixed-variant": "#5b4037", "surface-container": "#f2ede4", "surface-container-highest": "#e7e2d9", "tertiary-fixed": "#ffdcc2", "secondary": "#79573f", "outline": "#827470", "surface-bright": "#fef9f0", "background": "#fef9f0", "inverse-surface": "#32302b", "surface-tint": "#75584e", "on-secondary-fixed-variant": "#5f402a", "on-tertiary": "#ffffff", "on-surface-variant": "#504441", "primary-fixed": "#ffdbcf", "on-tertiary-container": "#be8453", "surface": "#fef9f0", "primary-fixed-dim": "#e4beb2", "on-error": "#ffffff", "inverse-on-surface": "#f5f0e7", "inverse-primary": "#e4beb2", "secondary-container": "#ffd1b3", "on-tertiary-fixed": "#2e1500", "secondary-fixed": "#ffdcc6", "primary": "#241009", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#683c11", "on-secondary-fixed": "#2d1604", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#2b160f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "margin": "1.25rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(59,36,28,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BUN &amp; BREW Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UJA7xrFu5yCQuE61diKIbvQQ4yMou6JTkku76MhLKeigpHmlvzDZ9uDCvDJkldaqv5pr-WbV43ZS2-PAuXpxTTO-6CJqMyKkFDc5ed6U_ue2-Z5S6g5_7_CNc9OyQ9sK9n3kJFjnk8yATuYD0PzN2PhJeadOjgD2hVlHhqj6Cl6beftAK9_N95ahrT1krRW2VQ6TpkkTcPHaySkJiG_NQ3PvR6BEAcc8nwBLm7QMPbkLZXvyazAdV4uho"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">BUN &amp; BREW</span><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase leading-none mt-0.5">Artisanal Roastery</span></div></div><div class="flex items-center gap-space-sm"><a class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-primary active:scale-95 transition-transform" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-[18px] text-center font-bold">2</span></a><a class="w-11 h-11 rounded-full p-0.5 bg-surface-container-high flex items-center justify-center active:scale-95 transition-transform" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAOF_C9HQnN2247kwNzCaJEYxae-kxTE2Gaj30xuSmoF6P0tnmwAO6IlyUh7pD13jNFHnKxLJLfq0my7IOlEoNfuPD8Qup8pKDfsMm2QJPIefmcjR9Lt5rdXEQqSffdHcq6dtImBpc1TfBUZ1Awn5TjSkGrWwm8v31TO7Hn-6g5yx8QUJhuuJKmyKj7HmQXg_ieJLM0FaHBhOa50lQmcNCF3ICfD8yB6eUj6BWL5ws0SWXURqusnzk"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-space-md">
+<!-- Status Reassurance Hero Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-[0_4px_16px_rgba(59,36,28,0.06)]">
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>Order #BB-8921</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Placed today at 10:24 AM</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Estimated Time</span>
+<span class="font-headline-sm text-headline-sm text-primary">10:35 AM</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[20px] animate-spin" style="animation-duration: 4s;">hourglass_top</span>
+</div>
+<div class="flex-1">
+<p class="font-label-lg text-label-lg text-primary">Ready in ~8 minutes</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Barista Alex is preparing your order with care</p>
+</div>
+</div>
+</div>
+<!-- Real-time Visual Progress Stepper -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_4px_16px_rgba(59,36,28,0.04)]">
+<div class="flex items-center justify-between pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary">Live Preparation</h2>
+<span class="font-label-sm text-label-sm text-secondary">Step 2 of 4</span>
+</div>
+<div class="relative mt-space-sm space-y-space-lg">
+<!-- Vertical progress track line -->
+<div class="absolute left-4 top-4 bottom-4 w-0.5 bg-surface-container-high -z-0">
+<!-- Filled progress portion -->
+<div class="w-full bg-secondary" style="height: 42%;"></div>
+</div>
+<!-- Step 1: Confirmed -->
+<div class="relative z-10 flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex-1 pt-0.5">
+<div class="flex items-center justify-between">
+<p class="font-label-lg text-label-lg text-primary">Order Confirmed</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:24 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Your ticket reached Barista Station 2.</p>
+</div>
+</div>
+<!-- Step 2: Brewing & Handcrafting (Active Stage) -->
+<div class="relative z-10 flex items-start gap-space-md">
+<div class="relative w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[18px] animate-pulse">local_cafe</span>
+<span class="absolute -inset-1 rounded-full bg-primary/20 animate-ping"></span>
+</div>
+<div class="flex-1 p-space-sm rounded-lg bg-surface-container-low pt- space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Brewing &amp; Handcrafting</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-sm text-label-sm">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Barista Alex is grinding single-origin beans and steaming fresh oat milk.
+          </p>
+<div class="flex items-center gap-2 pt-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">heat</span>
+<span>Espresso temp: 92.4°C optimal extraction</span>
+</div>
+</div>
+</div>
+<!-- Step 3: Counter Pickup (Pending) -->
+<div class="relative z-10 flex items-start gap-space-md opacity-75">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">countertops</span>
+</div>
+<div class="flex-1 pt-0.5">
+<div class="flex items-center justify-between">
+<p class="font-label-lg text-label-lg text-on-surface">Ready for Counter Pickup</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. 10:34 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pick up at Counter Bay 3 with your QR code.</p>
+</div>
+</div>
+<!-- Step 4: Completed -->
+<div class="relative z-10 flex items-start gap-space-md opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">sentiment_satisfied</span>
+</div>
+<div class="flex-1 pt-0.5">
+<p class="font-label-lg text-label-lg text-on-surface">Enjoy Your Brew</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Freshly handcrafted artisanal delight.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Pickup QR Code Card -->
+<div class="rounded-xl bg-surface-container p-space-md text-center shadow-[0_4px_16px_rgba(59,36,28,0.04)] space-y-space-sm">
+<div class="flex items-center justify-center gap-1.5 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+<span>Express Pickup Pass</span>
+</div>
+<!-- Stylized scannable QR Demo -->
+<div class="inline-flex p-3 rounded-lg bg-surface-container-lowest shadow-inner mx-auto">
+<div class="w-36 h-36 flex flex-col justify-between p-2 bg-on-surface rounded">
+<!-- Simplified high-contrast QR Matrix block simulation -->
+<div class="flex justify-between w-full">
+<div class="w-8 h-8 bg-surface-container-lowest p-1 rounded-sm flex items-center justify-center">
+<div class="w-4 h-4 bg-on-surface"></div>
+</div>
+<div class="flex gap-1">
+<div class="w-2 h-2 bg-surface-container-lowest"></div>
+<div class="w-2 h-2 bg-surface-container-lowest"></div>
+</div>
+<div class="w-8 h-8 bg-surface-container-lowest p-1 rounded-sm flex items-center justify-center">
+<div class="w-4 h-4 bg-on-surface"></div>
+</div>
+</div>
+<div class="flex items-center justify-around w-full py-1">
+<div class="w-3 h-3 bg-surface-container-lowest"></div>
+<div class="w-5 h-5 bg-surface-container-lowest flex items-center justify-center">
+<div class="w-2 h-2 bg-on-surface"></div>
+</div>
+<div class="w-3 h-3 bg-surface-container-lowest"></div>
+</div>
+<div class="flex justify-between w-full">
+<div class="w-8 h-8 bg-surface-container-lowest p-1 rounded-sm flex items-center justify-center">
+<div class="w-4 h-4 bg-on-surface"></div>
+</div>
+<div class="flex gap-1 items-end">
+<div class="w-3 h-3 bg-surface-container-lowest"></div>
+<div class="w-2 h-2 bg-surface-container-lowest"></div>
+</div>
+<div class="w-6 h-6 bg-surface-container-lowest rounded-sm"></div>
+</div>
+</div>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">Pickup for: Sarah</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Show this code or tell your name at Bay 3</p>
+</div>
+</div>
+<!-- Fulfillment Location Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_4px_16px_rgba(59,36,28,0.04)] space-y-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">store</span>
+</div>
+<div class="flex-1">
+<p class="font-label-lg text-label-lg text-primary">Downtown Roastery Branch</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">442 Campus Way, Ground Floor</p>
+<p class="font-label-sm text-label-sm text-secondary mt-0.5">Counter Bay 3 (Left of Roasting Machine)</p>
+</div>
+</div>
+<!-- Quick action links -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="h-11 flex items-center justify-center gap-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span>Directions</span>
+</a>
+<a class="h-11 flex items-center justify-center gap-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md active:scale-95 transition-transform" href="tel:5550192834">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Café</span>
+</a>
+</div>
+</div>
+<!-- Expandable Order Summary -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_4px_16px_rgba(59,36,28,0.04)]">
+<button class="w-full flex items-center justify-between text-left focus:outline-none" id="toggle-order-summary">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">Order Summary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(2 items)</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant transition-transform duration-200" id="summary-chevron">expand_more</span>
+</button>
+<div class="mt-space-md pt-space-md border-t-0 space-y-space-sm" id="order-summary-content">
+<!-- Item 1 -->
+<div class="flex items-start justify-between">
+<div class="flex-1 pr-2">
+<p class="font-label-lg text-label-lg text-primary">1x Signature Spanish Latte</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Medium • Iced • Oat Milk • 3 Espresso Shots</p>
+</div>
+<span class="font-label-lg text-label-lg text-primary">$5.79</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start justify-between">
+<div class="flex-1 pr-2">
+<p class="font-label-lg text-label-lg text-primary">1x Pistachio Brioche Bun</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Warm toasted • Crushed Bronte pistachio topping</p>
+</div>
+<span class="font-label-lg text-label-lg text-primary">$4.20</span>
+</div>
+<!-- Payment info divider card -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">credit_card</span>
+<span>Paid via Apple Pay</span>
+</span>
+<span class="font-label-lg text-label-lg text-primary">$9.99</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+<span>Loyalty Points Added</span>
+</span>
+<span class="font-bold">+10 Points ⭐</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Persistent Bottom Call-to-Actions -->
+<div class="pt-space-xs flex flex-col space-y-space-sm">
+<button class="w-full h-[52px] rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(59,36,28,0.18)] active:scale-95 transition-all" id="btn-reorder">
+<span class="material-symbols-outlined text-[20px]">autorenew</span>
+<span>Reorder This Combo</span>
+</button>
+<a class="w-full h-[52px] rounded-full bg-surface-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-95 transition-all" data-path="home" href="#">
+<span class="material-symbols-outlined text-[20px]">cottage</span>
+<span>Back to Home</span>
+</a>
+</div>
+</div>
+<script>
+  // Accordion toggle logic for order summary
+  const toggleBtn = document.getElementById('toggle-order-summary');
+  const summaryContent = document.getElementById('order-summary-content');
+  const chevron = document.getElementById('summary-chevron');
+
+  if (toggleBtn && summaryContent && chevron) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = summaryContent.classList.contains('hidden');
+      if (isHidden) {
+        summaryContent.classList.remove('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+      } else {
+        summaryContent.classList.add('hidden');
+        chevron.style.transform = 'rotate(-90deg)';
+      }
+    });
+  }
+
+  // Toast confirmation feedback on reorder click
+  const reorderBtn = document.getElementById('btn-reorder');
+  if (reorderBtn) {
+    reorderBtn.addEventListener('click', () => {
+      const originalText = reorderBtn.innerHTML;
+      reorderBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done</span><span>Added to Cart!</span>';
+      reorderBtn.classList.add('bg-secondary');
+      setTimeout(() => {
+        reorderBtn.innerHTML = originalText;
+        reorderBtn.classList.remove('bg-secondary');
+      }, 2200);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(59,36,28,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">coffee</span><span class="font-label-sm text-label-sm mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="expert-preferences" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">psychology</span><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-secondary-fixed-dim ring-2 ring-surface"></span></div><span class="font-label-sm text-label-sm mt-0.5">Expert</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] transition-colors text-primary font-bold" data-path="tracking" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

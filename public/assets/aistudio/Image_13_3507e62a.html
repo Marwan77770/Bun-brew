@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1d1c16", "surface-dim": "#ded9d1", "on-secondary": "#ffffff", "on-primary": "#ffffff", "tertiary": "#251000", "tertiary-container": "#432100", "surface-variant": "#e7e2d9", "primary-container": "#3b241c", "on-error-container": "#93000a", "surface-container-low": "#f8f3ea", "on-background": "#1d1c16", "error": "#ba1a1a", "on-primary-container": "#ab897e", "tertiary-fixed-dim": "#fab983", "error-container": "#ffdad6", "on-secondary-container": "#7a5840", "outline-variant": "d4c3be", "secondary-fixed-dim": "#eabda0", "on-primary-fixed-variant": "#5b4037", "surface-container": "#f2ede4", "surface-container-highest": "#e7e2d9", "tertiary-fixed": "#ffdcc2", "secondary": "#79573f", "outline": "#827470", "surface-bright": "#fef9f0", "background": "#fef9f0", "inverse-surface": "#32302b", "surface-tint": "#75584e", "on-secondary-fixed-variant": "#5f402a", "on-tertiary": "#ffffff", "on-surface-variant": "#504441", "primary-fixed": "#ffdbcf", "on-tertiary-container": "#be8453", "surface": "#fef9f0", "primary-fixed-dim": "#e4beb2", "on-error": "#ffffff", "inverse-on-surface": "#f5f0e7", "inverse-primary": "#e4beb2", "secondary-container": "#ffd1b3", "on-tertiary-fixed": "#2e1500", "secondary-fixed": "#ffdcc6", "primary": "#241009", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#683c11", "on-secondary-fixed": "#2d1604", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#2b160f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "margin": "1.25rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(59,36,28,0.05)]"><div class="h-16 px-space-sm flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go back" class="min-w-[48px] min-h-[48px] rounded-full flex items-center justify-center text-primary active:scale-95 transition-transform hover:bg-surface-container-low" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="BUN &amp; BREW Logo" class="h-7 w-auto object-contain hidden sm:block" src="https://lh3.googleusercontent.com/aida/AEtjO1UJA7xrFu5yCQuE61diKIbvQQ4yMou6JTkku76MhLKeigpHmlvzDZ9uDCvDJkldaqv5pr-WbV43ZS2-PAuXpxTTO-6CJqMyKkFDc5ed6U_ue2-Z5S6g5_7_CNc9OyQ9sK9n3kJFjnk8yATuYD0PzN2PhJeadOjgD2hVlHhqj6Cl6beftAK9_N95ahrT1krRW2VQ6TpkkTcPHaySkJiG_NQ3PvR6BEAcc8nwBLm7QMPbkLZXvyazAdV4uho"/><h1 class="font-headline-sm text-headline-sm text-primary truncate tracking-tight">Product Details</h1></div><div class="flex items-center gap-space-xs flex-shrink-0 pr-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAOF_C9HQnN2247kwNzCaJEYxae-kxTE2Gaj30xuSmoF6P0tnmwAO6IlyUh7pD13jNFHnKxLJLfq0my7IOlEoNfuPD8Qup8pKDfsMm2QJPIefmcjR9Lt5rdXEQqSffdHcq6dtImBpc1TfBUZ1Awn5TjSkGrWwm8v31TO7Hn-6g5yx8QUJhuuJKmyKj7HmQXg_ieJLM0FaHBhOa50lQmcNCF3ICfD8yB6eUj6BWL5ws0SWXURqusnzk"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-36">
+<!-- Top Utility Context Bar -->
+<div class="px-space-md py-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container text-primary active:scale-95 transition-all duration-150" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span class="font-label-md text-label-md">Back to Menu</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary active:scale-90 transition-all duration-150" id="favorite-btn" type="button">
+<span class="material-symbols-outlined text-[22px] text-error" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary active:scale-90 transition-all duration-150" id="share-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">ios_share</span>
+</button>
+</div>
+</div>
+<!-- Hero Product Visual Display -->
+<div class="px-space-md pt-space-xs">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-high shadow-md">
+<div class="relative h-72 w-full">
+<img class="w-full h-full object-cover" data-alt="Artisanal iced Spanish latte in a ribbed crystal tumbler glass showing distinct layers of sweetened condensed milk, velvety chilled oat milk, and rich dark espresso crema with crystal-clear square ice cubes, condensation water beads glistening on the glass exterior, soft morning sunlight casting amber and warm cream reflections, on a warm ceramic coaster inside an airy artisanal cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJBMo9ZcP17t84IpJljUSjLVNvcfcbR_KNGwtNa5cqZKa9Jy_x5cYPAPfOo_o37jc8G3tdpzAYjyOG9TmdGhG9ZxKhKGhg-c4SvEJ2_luTHykkSDiGhM3zZ-5GIhad0yWtBesL82AfXxuNmAm5jzk2PDveUOk3y64m4dLtPJ0D-nrEsfqEfrrt0YFRLXAACENKOkFfZfBxnZLHlSMizKUMFiaqLFjpnHgPuwImjXxhZyp9qXSCm2ZM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+            BUN &amp; BREW Signature
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm">
+            Best Seller
+          </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/30 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+              Single Origin Arabica
+            </span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/30 backdrop-blur-md px-2.5 py-1 rounded-full text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (428)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Header & Narrative -->
+<div class="px-space-md pt-4">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Signature Spanish Latte</h2>
+<p class="font-label-md text-label-md text-secondary mt-0.5">Espresso • Sweetened Milk • Madagascar Cream</p>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg text-primary" id="header-price">$7.25</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Base from $5.50</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2.5 leading-relaxed">
+      A luxurious blend of signature espresso, velvety textured milk, and premium sweetened condensed milk for a perfectly balanced caramel finish.
+    </p>
+<!-- Meta Attribute Badges -->
+<div class="grid grid-cols-3 gap-2 mt-3.5">
+<div class="flex flex-col items-center justify-center py-2 px-1.5 rounded-xl bg-surface-container text-center">
+<span class="material-symbols-outlined text-[20px] text-secondary">schedule</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">4-6 mins</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Prep Time</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-1.5 rounded-xl bg-surface-container text-center">
+<span class="material-symbols-outlined text-[20px] text-secondary">bolt</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Med-High</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Caffeine (~180mg)</span>
+</div>
+<div class="flex flex-col items-center justify-center py-2 px-1.5 rounded-xl bg-surface-container text-center">
+<span class="material-symbols-outlined text-[20px] text-secondary">eco</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Craft Roast</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[10px]">Sumatra &amp; Huila</span>
+</div>
+</div>
+</div>
+<!-- Customization Stack -->
+<div class="px-space-md pt-5 flex flex-col gap-5">
+<!-- 1. Temperature -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Temperature</span>
+<span class="font-label-sm text-label-sm text-secondary" id="temp-selection-label">Iced (Clear Ice)</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5 p-1 rounded-2xl bg-surface-container">
+<button class="temp-pill min-h-[48px] rounded-xl flex items-center justify-center gap-2 px-3 text-on-surface-variant font-label-md text-label-md transition-all duration-150" data-temp="hot" onclick="selectTemperature(this)" type="button">
+<span class="material-symbols-outlined text-[20px] text-error">local_fire_department</span>
+<span>Hot (Ceramic)</span>
+</button>
+<button class="temp-pill min-h-[48px] rounded-xl flex items-center justify-center gap-2 px-3 bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all duration-150" data-temp="iced" onclick="selectTemperature(this)" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">ac_unit</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">Iced (Clear Ice)</span>
+</button>
+</div>
+</div>
+<!-- 2. Cup Size -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Cup Size</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Required</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="size-pill min-h-[64px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all duration-150 active:scale-95" data-delta="0" data-size="small" onclick="selectSize(this)" type="button">
+<span class="font-label-md text-label-md text-primary">Small</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">8 oz</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Base</span>
+</button>
+<button class="size-pill active-size min-h-[64px] rounded-2xl bg-primary text-on-primary flex flex-col items-center justify-center p-2 text-center shadow-md transition-all duration-150 active:scale-95" data-delta="0.75" data-size="medium" onclick="selectSize(this)" type="button">
+<span class="font-label-md text-label-md text-on-primary">Medium</span>
+<span class="font-body-sm text-body-sm text-on-primary/80">12 oz</span>
+<span class="font-label-sm text-label-sm text-primary-fixed mt-0.5">+ $0.75</span>
+</button>
+<button class="size-pill min-h-[64px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all duration-150 active:scale-95" data-delta="1.50" data-size="large" onclick="selectSize(this)" type="button">
+<span class="font-label-md text-label-md text-primary">Large</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">16 oz</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">+ $1.50</span>
+</button>
+</div>
+</div>
+<!-- 3. Sweetness Level -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Sweetness Level</span>
+<span class="font-label-sm text-label-sm text-secondary" id="sweetness-label">Regular (100%)</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5">
+<button class="sweet-pill min-h-[48px] rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center py-1 transition-all" data-sweet="0" onclick="selectSweetness(this, 'No Sugar')" type="button">
+<span>0%</span>
+<span class="font-label-sm text-label-sm text-[10px]">None</span>
+</button>
+<button class="sweet-pill min-h-[48px] rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center py-1 transition-all" data-sweet="50" onclick="selectSweetness(this, 'Less Sweet (50%)')" type="button">
+<span>50%</span>
+<span class="font-label-sm text-label-sm text-[10px]">Less</span>
+</button>
+<button class="sweet-pill active-sweet min-h-[48px] rounded-xl bg-primary text-on-primary font-label-md text-label-md flex flex-col items-center justify-center py-1 shadow-sm transition-all" data-sweet="100" onclick="selectSweetness(this, 'Regular (100%)')" type="button">
+<span class="text-on-primary">100%</span>
+<span class="font-label-sm text-label-sm text-primary-fixed text-[10px]">Regular</span>
+</button>
+<button class="sweet-pill min-h-[48px] rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center py-1 transition-all" data-sweet="120" onclick="selectSweetness(this, 'Extra Sweet (120%)')" type="button">
+<span>120%</span>
+<span class="font-label-sm text-label-sm text-[10px]">Extra</span>
+</button>
+</div>
+</div>
+<!-- 4. Espresso Strength -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Espresso Strength</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Extracted fresh</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="shot-pill min-h-[52px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all" data-delta="0" data-shots="2" onclick="selectShots(this)" type="button">
+<span class="font-label-md text-label-md text-primary">Standard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 Shots</span>
+</button>
+<button class="shot-pill active-shot min-h-[52px] rounded-2xl bg-primary text-on-primary flex flex-col items-center justify-center p-2 text-center shadow-md transition-all" data-delta="0.80" data-shots="3" onclick="selectShots(this)" type="button">
+<span class="font-label-md text-label-md text-on-primary">Extra Bold</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">3 Shots (+$0.80)</span>
+</button>
+<button class="shot-pill min-h-[52px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all" data-delta="0" data-shots="decaf" onclick="selectShots(this)" type="button">
+<span class="font-label-md text-label-md text-primary">Decaf</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Swiss Water</span>
+</button>
+</div>
+</div>
+<!-- 5. Milk Choice -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Milk Option</span>
+<span class="font-label-sm text-label-sm text-secondary">Specialty Steamed</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only" data-delta="0" name="milk_choice" onchange="updateMilk(this)" type="radio" value="whole"/>
+<span class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Whole Milk (Creamy)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Local Dairy Organic</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Included</span>
+</label>
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only" data-delta="0" name="milk_choice" onchange="updateMilk(this)" type="radio" value="skimmed"/>
+<span class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Skimmed Milk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Light &amp; Balanced</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Included</span>
+</label>
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<input checked="" class="sr-only" data-delta="0.70" name="milk_choice" onchange="updateMilk(this)" type="radio" value="oat"/>
+<span class="radio-indicator w-5 h-5 rounded-full bg-primary flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-on-primary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Oat Milk (Barista Edition)</span>
+<span class="font-body-sm text-body-sm text-secondary">Recommended with Spanish Latte</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+ $0.70</span>
+</label>
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only" data-delta="0.70" name="milk_choice" onchange="updateMilk(this)" type="radio" value="almond"/>
+<span class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">California Almond Milk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nutty &amp; Silk-smooth</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+ $0.70</span>
+</label>
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only" data-delta="0.50" name="milk_choice" onchange="updateMilk(this)" type="radio" value="lactose_free"/>
+<span class="radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-transparent"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Lactose-Free Milk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gentle digestibility</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+ $0.50</span>
+</label>
+</div>
+</div>
+<!-- 6. Optional Add-ons & Toppings -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary">Add-ons &amp; Drizzles</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Optional</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<!-- Addon 1 (checked) -->
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<input checked="" class="sr-only addon-checkbox" data-delta="0.60" onchange="toggleAddon(this)" type="checkbox"/>
+<span class="addon-box w-5 h-5 rounded-md bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Vanilla Bean Syrup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pure Madagascar extract</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+ $0.60</span>
+</label>
+<!-- Addon 2 (unchecked) -->
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only addon-checkbox" data-delta="0.60" onchange="toggleAddon(this)" type="checkbox"/>
+<span class="addon-box w-5 h-5 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Artisan Caramel Syrup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">House-cooked brown sugar</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+ $0.60</span>
+</label>
+<!-- Addon 3 (unchecked) -->
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<input class="sr-only addon-checkbox" data-delta="0.50" onchange="toggleAddon(this)" type="checkbox"/>
+<span class="addon-box w-5 h-5 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Extra Whipped Cream</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fresh vanilla cold cream cap</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+ $0.50</span>
+</label>
+<!-- Addon 4 (checked) -->
+<label class="flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer select-none">
+<div class="flex items-center gap-3">
+<input checked="" class="sr-only addon-checkbox" data-delta="0.40" onchange="toggleAddon(this)" type="checkbox"/>
+<span class="addon-box w-5 h-5 rounded-md bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary">Caramel Drizzle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Torched salted ribbon on top</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+ $0.40</span>
+</label>
+</div>
+</div>
+<!-- Special Instructions Note -->
+<div class="p-3.5 rounded-2xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-secondary mt-0.5">sentiment_satisfied</span>
+<div class="flex-1">
+<span class="font-label-md text-label-md text-primary block">Barista's Promise</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Handcrafted upon ticket print. Double-shot extracted at 9 bars for maximal sweetness and smooth crema.</span>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Checkout Bar -->
+<aside aria-label="Order customization and checkout actions" class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(59,36,28,0.08)] pb-safe">
+<!-- Live Breakdown Pill Drawer Trigger -->
+<div class="px-space-md pt-2 pb-1 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1.5 cursor-pointer" onclick="toggleBreakdown()">
+<span class="font-label-sm text-label-sm text-secondary">View price breakdown</span>
+<span class="material-symbols-outlined text-[16px] text-secondary transition-transform duration-200" id="breakdown-chevron">expand_more</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="summary-meta">Medium • Oat Milk • 3 Shots</span>
+</div>
+<!-- Collapsible Price Breakdown Panel -->
+<div class="hidden px-space-md py-2 mx-space-md mb-2 rounded-xl bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-1 transition-all" id="breakdown-panel">
+<div class="flex justify-between">
+<span>Base Drink (Spanish Latte)</span>
+<span>$5.50</span>
+</div>
+<div class="flex justify-between" id="row-size">
+<span>Medium Size (12 oz)</span>
+<span>+$0.75</span>
+</div>
+<div class="flex justify-between" id="row-shots">
+<span>Extra Bold (3 Shots)</span>
+<span>+$0.80</span>
+</div>
+<div class="flex justify-between" id="row-milk">
+<span>Oat Milk</span>
+<span>+$0.70</span>
+</div>
+<div class="flex justify-between" id="row-addons">
+<span>Selected Add-ons (Vanilla, Drizzle)</span>
+<span>+$1.00</span>
+</div>
+<div class="flex justify-between pt-1 font-label-md text-label-md text-primary">
+<span>Per Drink</span>
+<span id="breakdown-subtotal">$8.75</span>
+</div>
+</div>
+<!-- Controls Row -->
+<div class="px-space-md pb-3 pt-1 flex items-center gap-3">
+<!-- Quantity Stepper -->
+<div class="h-[52px] px-2 rounded-full bg-surface-container flex items-center justify-between gap-2 shadow-inner">
+<button aria-label="Decrease quantity" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform" onclick="adjustQty(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-primary w-6 text-center select-none" id="qty-display">1</span>
+<button aria-label="Increase quantity" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-transform" onclick="adjustQty(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Add to Cart CTA -->
+<button class="flex-1 h-[52px] rounded-full bg-primary text-on-primary px-5 flex items-center justify-between shadow-lg active:scale-[0.98] transition-all duration-150" id="add-to-cart-btn" onclick="triggerAddToCart()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="font-label-lg text-label-lg">Add to Order</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-primary" id="cta-price">$7.25</span>
+</button>
+</div>
+</aside>
+<!-- Success Confirmation Toast Notification -->
+<div class="fixed top-20 left-4 right-4 z-50 transform -translate-y-24 opacity-0 pointer-events-none transition-all duration-300 ease-out" id="cart-toast">
+<div class="rounded-2xl bg-primary text-on-primary p-3.5 shadow-2xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-primary">Added to your order!</h4>
+<p class="font-body-sm text-body-sm text-on-primary/80">Spanish Latte (Iced, Med, Oat)</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 text-on-primary font-label-sm text-label-sm active:scale-95 transition-all" onclick="dismissToast()" type="button">
+        View Cart (3)
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // State machine for coffee pricing calculation
+  const BASE_PRICE = 5.50;
+  let state = {
+    quantity: 1,
+    sizeDelta: 0.75, // Medium default
+    shotDelta: 0.80, // 3 Shots default
+    milkDelta: 0.70, // Oat Milk default
+    addonsDelta: 1.00 // Vanilla Bean (0.60) + Caramel Drizzle (0.40)
+  };
+
+  function calculateSingleItemPrice() {
+    return BASE_PRICE + state.sizeDelta + state.shotDelta + state.milkDelta + state.addonsDelta;
+  }
+
+  function renderPrice() {
+    const single = calculateSingleItemPrice();
+    const total = (single * state.quantity).toFixed(2);
+    const formattedSingle = single.toFixed(2);
+
+    const ctaPrice = document.getElementById('cta-price');
+    const headerPrice = document.getElementById('header-price');
+    const breakdownSubtotal = document.getElementById('breakdown-subtotal');
+    
+    if (ctaPrice) ctaPrice.textContent = `$${total}`;
+    if (headerPrice) headerPrice.textContent = `$${formattedSingle}`;
+    if (breakdownSubtotal) breakdownSubtotal.textContent = `$${formattedSingle}`;
+  }
+
+  function adjustQty(change) {
+    state.quantity = Math.max(1, state.quantity + change);
+    const qtyDisplay = document.getElementById('qty-display');
+    if (qtyDisplay) {
+      qtyDisplay.textContent = state.quantity;
+      qtyDisplay.classList.add('scale-125');
+      setTimeout(() => qtyDisplay.classList.remove('scale-125'), 150);
+    }
+    renderPrice();
+  }
+
+  function selectTemperature(el) {
+    document.querySelectorAll('.temp-pill').forEach(btn => {
+      btn.className = 'temp-pill min-h-[48px] rounded-xl flex items-center justify-center gap-2 px-3 text-on-surface-variant font-label-md text-label-md transition-all duration-150';
+    });
+    el.className = 'temp-pill min-h-[48px] rounded-xl flex items-center justify-center gap-2 px-3 bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all duration-150';
+    
+    const label = document.getElementById('temp-selection-label');
+    if (label) {
+      label.textContent = el.dataset.temp === 'hot' ? 'Hot (Ceramic Cup)' : 'Iced (Clear Ice)';
+    }
+  }
+
+  function selectSize(el) {
+    document.querySelectorAll('.size-pill').forEach(btn => {
+      btn.className = 'size-pill min-h-[64px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all duration-150 active:scale-95';
+      const spans = btn.querySelectorAll('span');
+      if (spans[0]) spans[0].className = 'font-label-md text-label-md text-primary';
+      if (spans[1]) spans[1].className = 'font-body-sm text-body-sm text-on-surface-variant';
+      if (spans[2]) spans[2].className = 'font-label-sm text-label-sm text-secondary mt-0.5';
+    });
+
+    el.className = 'size-pill active-size min-h-[64px] rounded-2xl bg-primary text-on-primary flex flex-col items-center justify-center p-2 text-center shadow-md transition-all duration-150 active:scale-95';
+    const activeSpans = el.querySelectorAll('span');
+    if (activeSpans[0]) activeSpans[0].className = 'font-label-md text-label-md text-on-primary';
+    if (activeSpans[1]) activeSpans[1].className = 'font-body-sm text-body-sm text-on-primary/80';
+    if (activeSpans[2]) activeSpans[2].className = 'font-label-sm text-label-sm text-primary-fixed mt-0.5';
+
+    state.sizeDelta = parseFloat(el.dataset.delta) || 0;
+    
+    const row = document.getElementById('row-size');
+    if (row) {
+      const names = { small: 'Small (8 oz)', medium: 'Medium (12 oz)', large: 'Large (16 oz)' };
+      row.children[0].textContent = names[el.dataset.size] || 'Size';
+      row.children[1].textContent = state.sizeDelta > 0 ? `+$${state.sizeDelta.toFixed(2)}` : 'Base';
+    }
+    renderPrice();
+  }
+
+  function selectSweetness(el, text) {
+    document.querySelectorAll('.sweet-pill').forEach(btn => {
+      btn.className = 'sweet-pill min-h-[48px] rounded-xl bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center py-1 transition-all';
+      const spans = btn.querySelectorAll('span');
+      if (spans[1]) spans[1].className = 'font-label-sm text-label-sm text-[10px] text-on-surface-variant';
+    });
+
+    el.className = 'sweet-pill active-sweet min-h-[48px] rounded-xl bg-primary text-on-primary font-label-md text-label-md flex flex-col items-center justify-center py-1 shadow-sm transition-all';
+    const sub = el.querySelectorAll('span')[1];
+    if (sub) sub.className = 'font-label-sm text-label-sm text-primary-fixed text-[10px]';
+
+    const sweetLabel = document.getElementById('sweetness-label');
+    if (sweetLabel) sweetLabel.textContent = text;
+  }
+
+  function selectShots(el) {
+    document.querySelectorAll('.shot-pill').forEach(btn => {
+      btn.className = 'shot-pill min-h-[52px] rounded-2xl bg-surface-container flex flex-col items-center justify-center p-2 text-center transition-all';
+      const spans = btn.querySelectorAll('span');
+      if (spans[0]) spans[0].className = 'font-label-md text-label-md text-primary';
+      if (spans[1]) spans[1].className = 'font-body-sm text-body-sm text-on-surface-variant';
+    });
+
+    el.className = 'shot-pill active-shot min-h-[52px] rounded-2xl bg-primary text-on-primary flex flex-col items-center justify-center p-2 text-center shadow-md transition-all';
+    const activeSpans = el.querySelectorAll('span');
+    if (activeSpans[0]) activeSpans[0].className = 'font-label-md text-label-md text-on-primary';
+    if (activeSpans[1]) activeSpans[1].className = 'font-label-sm text-label-sm text-primary-fixed';
+
+    state.shotDelta = parseFloat(el.dataset.delta) || 0;
+    const row = document.getElementById('row-shots');
+    if (row) {
+      row.children[1].textContent = state.shotDelta > 0 ? `+$${state.shotDelta.toFixed(2)}` : 'Standard';
+    }
+    renderPrice();
+  }
+
+  function updateMilk(radio) {
+    // Reset indicators
+    document.querySelectorAll('input[name="milk_choice"]').forEach(r => {
+      const parentLabel = r.closest('label');
+      const ind = parentLabel.querySelector('.radio-indicator');
+      const dot = ind.querySelector('span');
+      
+      parentLabel.className = 'flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors';
+      ind.className = 'radio-indicator w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center';
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-transparent';
+    });
+
+    const activeLabel = radio.closest('label');
+    const activeInd = activeLabel.querySelector('.radio-indicator');
+    const activeDot = activeInd.querySelector('span');
+    
+    activeLabel.className = 'flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer select-none';
+    activeInd.className = 'radio-indicator w-5 h-5 rounded-full bg-primary flex items-center justify-center';
+    activeDot.className = 'w-2.5 h-2.5 rounded-full bg-on-primary';
+
+    state.milkDelta = parseFloat(radio.dataset.delta) || 0;
+    const row = document.getElementById('row-milk');
+    if (row) {
+      row.children[1].textContent = state.milkDelta > 0 ? `+$${state.milkDelta.toFixed(2)}` : 'Included';
+    }
+    renderPrice();
+  }
+
+  function toggleAddon(checkbox) {
+    const parentLabel = checkbox.closest('label');
+    const box = parentLabel.querySelector('.addon-box');
+
+    if (checkbox.checked) {
+      parentLabel.className = 'flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer select-none';
+      box.className = 'addon-box w-5 h-5 rounded-md bg-primary flex items-center justify-center text-on-primary';
+    } else {
+      parentLabel.className = 'flex items-center justify-between min-h-[50px] px-3.5 rounded-2xl bg-surface-container cursor-pointer select-none active:bg-surface-container-high transition-colors';
+      box.className = 'addon-box w-5 h-5 rounded-md bg-surface-container-highest flex items-center justify-center text-transparent';
+    }
+
+    let sum = 0;
+    document.querySelectorAll('.addon-checkbox:checked').forEach(cb => {
+      sum += parseFloat(cb.dataset.delta) || 0;
+    });
+    state.addonsDelta = sum;
+
+    const row = document.getElementById('row-addons');
+    if (row) {
+      row.children[1].textContent = `+$${state.addonsDelta.toFixed(2)}`;
+    }
+    renderPrice();
+  }
+
+  function toggleBreakdown() {
+    const panel = document.getElementById('breakdown-panel');
+    const chevron = document.getElementById('breakdown-chevron');
+    if (panel.classList.contains('hidden')) {
+      panel.classList.remove('hidden');
+      chevron.classList.add('rotate-180');
+    } else {
+      panel.classList.add('hidden');
+      chevron.classList.remove('rotate-180');
+    }
+  }
+
+  function triggerAddToCart() {
+    const toast = document.getElementById('cart-toast');
+    if (!toast) return;
+
+    toast.classList.remove('-translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    // Visual bump on the button
+    const btn = document.getElementById('add-to-cart-btn');
+    btn.classList.add('scale-95');
+    setTimeout(() => btn.classList.remove('scale-95'), 180);
+
+    // Auto dismiss after 3.8s
+    setTimeout(() => {
+      dismissToast();
+    }, 3800);
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('cart-toast');
+    if (toast) {
+      toast.classList.add('-translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+  }
+
+  // Favorite Heart Toggle Microinteraction
+  document.getElementById('favorite-btn')?.addEventListener('click', function() {
+    const icon = this.querySelector('span');
+    const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+    if (isFilled) {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.classList.remove('text-error');
+      icon.classList.add('text-primary');
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.classList.remove('text-primary');
+      icon.classList.add('text-error');
+    }
+    this.classList.add('scale-125');
+    setTimeout(() => this.classList.remove('scale-125'), 180);
+  });
+
+  // Share action feedback
+  document.getElementById('share-btn')?.addEventListener('click', function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Signature Spanish Latte - BUN & BREW',
+        text: 'Treat yourself to the best Spanish Latte in town at BUN & BREW!'
+      }).catch(() => {});
+    } else {
+      this.classList.add('bg-secondary-container');
+      setTimeout(() => this.classList.remove('bg-secondary-container'), 300);
+    }
+  });
+
+  // Initial pricing computation
+  renderPrice();
+</script></main></body></html>

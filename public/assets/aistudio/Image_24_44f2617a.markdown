@@ -1,0 +1,229 @@
+---
+name: Warm Artisanal Tactile
+colors:
+  surface: '#fef9f0'
+  surface-dim: '#ded9d1'
+  surface-bright: '#fef9f0'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f8f3ea'
+  surface-container: '#f2ede4'
+  surface-container-high: '#ece8df'
+  surface-container-highest: '#e7e2d9'
+  on-surface: '#1d1c16'
+  on-surface-variant: '#504441'
+  inverse-surface: '#32302b'
+  inverse-on-surface: '#f5f0e7'
+  outline: '#827470'
+  outline-variant: '#d4c3be'
+  surface-tint: '#75584e'
+  primary: '#241009'
+  on-primary: '#ffffff'
+  primary-container: '#3b241c'
+  on-primary-container: '#ab897e'
+  inverse-primary: '#e4beb2'
+  secondary: '#79573f'
+  on-secondary: '#ffffff'
+  secondary-container: '#ffd1b3'
+  on-secondary-container: '#7a5840'
+  tertiary: '#251000'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#432100'
+  on-tertiary-container: '#be8453'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdbcf'
+  primary-fixed-dim: '#e4beb2'
+  on-primary-fixed: '#2b160f'
+  on-primary-fixed-variant: '#5b4037'
+  secondary-fixed: '#ffdcc6'
+  secondary-fixed-dim: '#eabda0'
+  on-secondary-fixed: '#2d1604'
+  on-secondary-fixed-variant: '#5f402a'
+  tertiary-fixed: '#ffdcc2'
+  tertiary-fixed-dim: '#fab983'
+  on-tertiary-fixed: '#2e1500'
+  on-tertiary-fixed-variant: '#683c11'
+  background: '#fef9f0'
+  on-background: '#1d1c16'
+  surface-variant: '#e7e2d9'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.02em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-mobile: 0.75rem
+  margin: 1.25rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system crafts a warm, sensory, and tactile digital experience that mirrors the atmosphere of an artisanal neighborhood specialty coffee house. It blends modern utilitarian clarity with physical, culinary warmth—celebrating craft, aroma, and human connection without feeling sterile or overly corporate.
+
+The aesthetic fuses **Warm Editorial Minimalism** with **Tactile / Skeuomorphic Micro-details**:
+- Generous, airy negative space framed by rich organic earth tones.
+- Deep espresso grounding anchors against soft, milk-steamed cream surfaces.
+- Subtle physical presence through warm ambient shadows, delicate organic borders, and comforting, pill-like radiuses.
+- Tone is welcoming, mindful, unhurried, yet ruthlessly efficient during peak ordering rush hours.
+- Strict adherence to mobile-first Human-Machine Interaction (HMI) standards: tactile button feedback, thumb-zone spatial prioritization, and generous 48px standard touch targets to prevent mis-taps.
+
+## Colors
+
+The palette is rooted in coffee bean processing, roasting, and milk emulsification stages:
+
+- **Primary (`#3B241C` - Espresso Brown):** Primary brand anchor. Used for primary CTAs, active bottom navigation states, core headline typography, and high-emphasis icons.
+- **Secondary (`#6F4E37` - Coffee Brown):** Secondary interactive elements, secondary buttons, subheadings, and tonal structural accents.
+- **Tertiary / Accent (`#C68B59` - Caramel Accent):** Warm focal highlights, loyalty reward badges, active selection pills, progress bars, and specialty bean tasting notes.
+- **Neutral / Canvas (`#F8F3EA` - Warm Cream):** Default app canvas background, providing gentle low-strain warmth compared to stark cool white.
+- **Surface Elevated (`#FFFFFF` & `#E8D8C3` - Pure White & Latte Beige):** White serves as primary interactive card backgrounds, while Latte Beige provides tonal contrast for nested containers, divider strokes, and inactive segmented controls.
+- **Text & Semantic Hierarchy:**
+  - Text Primary: `#29231F` (deep roasted roast, AA/AAA accessible against cream and latte surfaces)
+  - Text Secondary: `#81766D` (steamed bean wash, intended for metadata, captions, and secondary actions)
+  - Success: `#39765A` (matcha herbal green for order confirmations, availability tags)
+  - Error: `#C94C4C` (roasted red berry for validation warnings and stock outages)
+
+## Typography
+
+The design system relies entirely on **Plus Jakarta Sans**, a contemporary grotesque sans-serif that marries geometric precision with friendly humanist warmth. Its open apertures and subtle soft terminals echo the craftsmanship of modern barista identity while guaranteeing high legibility across mobile displays.
+
+### Typographic Hierarchy Rules
+- **Display & Section Titles (`headline-xl`, `headline-lg`):** Reserved for menu category welcomes, onboarding, and hero order status moments. Tight letter tracking ensures crisp impact.
+- **Content Headings (`headline-md`, `headline-sm`):** Item names, customization modals, and drawer titles.
+- **Body (`body-lg`, `body-md`):** Roaster notes, origin descriptions, and receipt details.
+- **Labels & Microcopy (`label-lg`, `label-md`, `label-sm`):** Price tags, CTA button text, milk/syrup modifier switches, and temperature chips. All caps should be used strictly with `label-sm` alongside increased tracking (+0.04em) for roast origins and dietary badges (e.g., "OAT", "SINGLE ORIGIN").
+
+## Layout & Spacing
+
+A strictly mobile-first rhythm based on an 8pt spatial grid, refined down to 4pt for micro-alignments (chips, badges, and icon margins).
+
+### Grid & Canvas Structure
+- **Mobile (< 600px):** 4-column fluid layout with `16px` (`1rem`) side canvas margins and `12px` (`0.75rem`) gutters between grid cards (e.g., 2-column pastry & coffee item grids).
+- **Tablet / Large Handhelds (600px – 1024px):** 8-column layout with `20px` (`1.25rem`) outer margins and `16px` (`1rem`) gutters. Modals and checkout sheets max out at `560px` centered width.
+- **Safe Zones & Touch Architecture:**
+  - Bottom navigation and sticky CTA trays sit above safe area insets with a minimum height of `64px`.
+  - All interactive tap targets (toggles, quantity steppers, option radio pills) enforce a strict minimum bound of `48px × 48px`.
+
+## Elevation & Depth
+
+Rather than detached cold shadows, this design system establishes organic depth using **warm-tinted ambient glows** and **tonal layering**. Surfaces feel soft and tangible, reminiscent of layered stationery and ceramic drinkware.
+
+### Surface Tiers
+- **Canvas Level 0 (`#F8F3EA`):** Warm Cream base viewport. Flat.
+- **Surface Level 1 (`#FFFFFF`):** Main item cards, category trays. Elevation is defined by a soft border (`1px solid #E8D8C3`) paired with ambient warm drop: `0px 4px 16px rgba(59, 36, 28, 0.04)`.
+- **Surface Level 2 (`#FFFFFF` elevated):** Floating Bottom Navigation bar, active customization drawer, cart sheet: `0px 8px 24px rgba(59, 36, 28, 0.08)`, border `1px solid rgba(232, 216, 195, 0.6)`.
+- **Surface Level 3 (`#3B241C`):** Primary Toast notifications and floating action buttons: `0px 12px 28px rgba(59, 36, 28, 0.18)`.
+
+## Shapes
+
+The design system incorporates generous, organic curvatures (`roundedness: 2`, where base is `0.5rem / 8px`, `rounded-lg` is `1rem / 16px`, and `rounded-xl` is `1.25rem / 20px` to `1.5rem / 24px`).
+
+- **Cards & Sheets (`16px - 20px`):** Food and beverage cards utilize `18px` corners to evoke handcrafted warmth without sacrificing interior grid space.
+- **Interactive Controls & Buttons (`9999px` / Full Pill):** Primary buttons, filter chips, cup size pickers, and quantity steppers adopt fully rounded pill geometry for maximum tactile affordance and thumb friendliness.
+- **Modals & Slide-up Drawers:** Top corners utilize `24px` radius for smooth sheet transitions.
+
+## Components
+
+### Buttons
+- **Primary Button:** Background `#3B241C`, Text `#FFFFFF`, fully rounded pill (`border-radius: 9999px`), height `52px`, padding `0 24px`. Pressed state scales slightly (`transform: scale(0.98)`) with background darkening to `#29231F`.
+- **Secondary Button:** Background `#E8D8C3`, Text `#3B241C`, height `52px`, pill shape. Hover/active shifts to `#DEC8AE`.
+- **Tertiary / Ghost Button:** Transparent background, Text `#6F4E37`, font weight 600, with an underline indicator appearing on active state.
+
+### Chips & Selector Pills
+- **Filter Chips:** Height `38px`, horizontal padding `16px`. Inactive state: background `#FFFFFF`, border `1px solid #E8D8C3`, text `#81766D`. Active state: background `#3B241C`, text `#FFFFFF`, border `1px solid #3B241C`.
+- **Customization Options (Milk, Temperature, Sweetness):** Segmented container with `#E8D8C3` background (`8px` radius). Active segment transitions with a crisp white card surface, `#29231F` text, and subtle `0px 2px 6px rgba(59,36,28,0.08)` drop shadow.
+
+### Cards (Beverage & Bakery)
+- **Product Card:** Background `#FFFFFF`, border-radius `18px`, border `1px solid #E8D8C3`, padding `12px`.
+- **Imagery:** Aspect ratio 1:1, border-radius `12px`, subtle cream wash underlay.
+- **Details:** Item title (`headline-sm`), brief notes (`body-sm`, `#81766D`), bottom lockup combining price (`label-lg`, `#3B241C`) with a circular `+` quick-add button (diameter `36px`, background `#6F4E37`, icon `#FFFFFF`).
+
+### Lists & Cart Rows
+- Clean row dividers using `1px solid rgba(232, 216, 195, 0.7)`.
+- Customization summaries nested beneath item titles in `body-sm`, `#81766D`.
+- Quantity steppers formatted as self-contained pills (`height: 36px`, background `#F8F3EA`, border `1px solid #E8D8C3`, containing minus, number, and plus actions).
+
+### Inputs & Form Elements
+- **Search Bar:** Height `48px`, background `#FFFFFF`, border `1.5px solid #E8D8C3`, border-radius `9999px`, padding `0 18px`. Leading coffee-cup search icon in `#81766D`. Focus state transitions border to `#C68B59` with zero harsh outline rings.
+- **Checkboxes & Radios:** Size `22px × 22px`. Selected state fills with `#3B241C` displaying an off-white inner check or concentric inner dot (`#F8F3EA`).
+
+### Coffee-Specific Domain Components
+- **Bean Roast Meter:** A 5-point organic dot-bar rating system utilizing `#C68B59` (filled) and `#E8D8C3` (unfilled) to communicate light-to-dark roast spectrums.
+- **Temperature Badge:** Compact pill tags (`Hot` in soft terracotta `#F6ECE8` with `#C94C4C` text; `Iced` in soft glacial cream `#EDF3F3` with `#39765A` text).

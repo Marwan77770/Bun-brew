@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1d1c16", "surface-dim": "#ded9d1", "on-secondary": "#ffffff", "on-primary": "#ffffff", "tertiary": "#251000", "tertiary-container": "#432100", "surface-variant": "#e7e2d9", "primary-container": "#3b241c", "on-error-container": "#93000a", "surface-container-low": "#f8f3ea", "on-background": "#1d1c16", "error": "#ba1a1a", "on-primary-container": "#ab897e", "tertiary-fixed-dim": "#fab983", "error-container": "#ffdad6", "on-secondary-container": "#7a5840", "outline-variant": "#d4c3be", "secondary-fixed-dim": "#eabda0", "on-primary-fixed-variant": "#5b4037", "surface-container": "#f2ede4", "surface-container-highest": "#e7e2d9", "tertiary-fixed": "#ffdcc2", "secondary": "#79573f", "outline": "#827470", "surface-bright": "#fef9f0", "background": "#fef9f0", "inverse-surface": "#32302b", "surface-tint": "#75584e", "on-secondary-fixed-variant": "#5f402a", "on-tertiary": "#ffffff", "on-surface-variant": "#504441", "primary-fixed": "#ffdbcf", "on-tertiary-container": "#be8453", "surface": "#fef9f0", "primary-fixed-dim": "#e4beb2", "on-error": "#ffffff", "inverse-on-surface": "#f5f0e7", "inverse-primary": "#e4beb2", "secondary-container": "#ffd1b3", "on-tertiary-fixed": "#2e1500", "secondary-fixed": "#ffdcc6", "primary": "#241009", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#683c11", "on-secondary-fixed": "#2d1604", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#2b160f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "margin": "1.25rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(59,36,28,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BUN &amp; BREW Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UJA7xrFu5yCQuE61diKIbvQQ4yMou6JTkku76MhLKeigpHmlvzDZ9uDCvDJkldaqv5pr-WbV43ZS2-PAuXpxTTO-6CJqMyKkFDc5ed6U_ue2-Z5S6g5_7_CNc9OyQ9sK9n3kJFjnk8yATuYD0PzN2PhJeadOjgD2hVlHhqj6Cl6beftAK9_N95ahrT1krRW2VQ6TpkkTcPHaySkJiG_NQ3PvR6BEAcc8nwBLm7QMPbkLZXvyazAdV4uho"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">BUN &amp; BREW</span><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase leading-none mt-0.5">Artisanal Roastery</span></div></div><div class="flex items-center gap-space-sm"><a class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-primary active:scale-95 transition-transform" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-[18px] text-center font-bold">2</span></a><a class="w-11 h-11 rounded-full p-0.5 bg-surface-container-high flex items-center justify-center active:scale-95 transition-transform" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAOF_C9HQnN2247kwNzCaJEYxae-kxTE2Gaj30xuSmoF6P0tnmwAO6IlyUh7pD13jNFHnKxLJLfq0my7IOlEoNfuPD8Qup8pKDfsMm2QJPIefmcjR9Lt5rdXEQqSffdHcq6dtImBpc1TfBUZ1Awn5TjSkGrWwm8v31TO7Hn-6g5yx8QUJhuuJKmyKj7HmQXg_ieJLM0FaHBhOa50lQmcNCF3ICfD8yB6eUj6BWL5ws0SWXURqusnzk"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Greeting & Search Area -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between mb-3">
+<div>
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Good morning, Sarah!</h1>
+<span class="text-xl inline-block animate-bounce">☕</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Ready for your morning brew?</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</div>
+<!-- Tactile Search Bar with Filter Icon -->
+<div class="relative flex items-center w-full">
+<div class="absolute left-4 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-12 rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline shadow-[0_2px_8px_rgba(59,36,28,0.04)] focus:outline-none focus:shadow-[0_4px_14px_rgba(59,36,28,0.1)] transition-all" placeholder="What are you craving today?" type="text"/>
+<button aria-label="Filters" class="absolute right-1.5 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</section>
+<!-- Hero Promotional Banner -->
+<section class="px-margin my-3">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-primary to-tertiary text-on-primary p-5 shadow-[0_8px_24px_rgba(59,36,28,0.16)] flex flex-col justify-between min-h-[170px]">
+<!-- Background Ambient Glow & Imagery -->
+<div class="absolute -right-6 -bottom-6 w-44 h-44 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute right-0 bottom-0 w-36 h-36 opacity-30 rounded-full overflow-hidden pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Close up artisanal honey cinnamon Spanish latte with golden silky froth and a freshly baked golden brown almond croissant dusted with fine powdered sugar on a warm speckled stoneware plate, soft morning bakery lighting, golden amber coffee tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsQkqB8qVy9aZis3wLvqolssu-bCGzCHrnQ28stQAU-IBDjZLwari0b9fu6MvONCMkybFARjakFJQFPEMPbz14g2mFqnAkXKnrkKQ9jOYXh2lPuCqjzsvUigcqERvDQRpoZtbEDlpJwIxpuVZODF5f7D1fhx3LLYFUvpTjzsN5YsHrRGW5BElx9wKyj4opHnXYOD3pGDSFZZQGyj8NIbply0d0TYjEHZl9_gTilJmKkR7vdAYHkVMu"/>
+</div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/25 backdrop-blur-sm text-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Spring Roaster Special</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary leading-tight max-w-[230px]">
+          Honey Cinnamon Latte &amp; Croissant
+        </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1 max-w-[210px]">
+          Signature blend paired with flaky almond pastry at 20% off.
+        </p>
+</div>
+<div class="relative z-10 flex items-center justify-between pt-3 mt-1">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-bold">$7.40</span>
+<span class="font-body-sm text-body-sm text-on-primary-container line-through opacity-70">$9.25</span>
+</div>
+<button class="h-9 px-4 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" onclick="triggerToast('Spring Combo added to cart!')">
+<span>Order Now</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Coffee Expert Hero Card -->
+<section class="px-margin my-3">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-4 shadow-[0_4px_16px_rgba(59,36,28,0.04)]">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex-shrink-0 flex items-center justify-center text-on-secondary-container shadow-inner">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Taste Concierge</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container/80 text-on-secondary-container text-label-sm font-label-sm">30s quiz</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5 leading-snug">Not sure what to order?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+            Take our quick taste quiz powered by roast profiles and sweet-note rules to unlock your exact match.
+          </p>
+</div>
+</div>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container/60 -mx-4 -mb-4 px-4 py-2.5 rounded-b-xl">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-secondary">Barista rule-based matching</span>
+</div>
+<a class="h-9 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md inline-flex items-center gap-1 shadow-sm active:scale-95 transition-transform" data-path="expert-preferences" href="#">
+<span>Take Taste Quiz</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">arrow_back_ios_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Shop by Category Horizontal Strip -->
+<section class="my-4">
+<div class="px-margin flex items-center justify-between mb-2.5">
+<h3 class="font-headline-sm text-headline-sm text-primary">Shop by Category</h3>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-0.5" data-path="menu" href="#">
+<span>View all</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Category Pills -->
+<div class="flex gap-2 px-margin overflow-x-auto no-scrollbar scroll-smooth py-1">
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform">
+<span>All</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">☕</span>
+<span>Hot Coffee</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">🧊</span>
+<span>Iced Drinks</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">🥤</span>
+<span>Frappes</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">🍵</span>
+<span>Tea &amp; Matcha</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">🥐</span>
+<span>Bakery &amp; Buns</span>
+</button>
+<button class="flex-shrink-0 h-10 px-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-[0_2px_8px_rgba(59,36,28,0.04)] active:scale-95 transition-transform">
+<span class="text-base">🥪</span>
+<span>Sandwiches</span>
+</button>
+</div>
+</section>
+<!-- Best Sellers Grid -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Best Sellers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Neighborhood favorites brewed fresh daily</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm font-bold uppercase">Popular</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Card 1: Spanish Latte -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-[0_4px_16px_rgba(59,36,28,0.05)]">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Iced Spanish Latte in an artisanal ribbed glass cup with sweet condensed milk settled at the bottom and deep espresso swirling through creamy whole milk on a warm ceramic coaster." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA_Uzvu47_aTk5CDoa0uUK0bsWDSbtxrTpjYPmviCk4n5g6IhSlHZwzc8AQuv_ntEBjQD_VU6m8NDpz50Lw5hlAsRbXdoE_0Cz6stUh4aYgJQvay81Er6MAfnaQN10prIhr8IOf0t0Ryj8nzr_KeNw_jT_fdl7QuawJ4DLY5YDRD4I1UodbGxUU0vIitsNgNtvCJfY1pOVlGh6YPWsf3Wfh3tb2s0tZqoSrzL2tq1DwduDQV6gB7Om"/>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-[10px] flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (320+)</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-low/95 text-secondary text-label-sm text-[10px] font-semibold">
+              Customizable
+            </div>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary leading-tight">Spanish Latte</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Espresso, condensed milk</p>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.50</span>
+<button aria-label="Add Spanish Latte" class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="triggerToast('Spanish Latte added to cart!')">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Cold Brew Reserve -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-[0_4px_16px_rgba(59,36,28,0.05)]">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Cold brew reserve coffee in a clear tumbler with a massive single clear ice cube, rich dark amber liquid, fine condensation on the glass, rustic artisanal wood tabletop backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Ciem99AoJEqqGm2ychFVmr0QMbXxQhoxNGqt03bxQ46po5fbX2KDZNkVJ3Hm6DBmhHrqVraKf0m2GtJHGkIzUtafoQl6ZKREXJBPpHNpBt2KmW5XMFlHf_W1EBwKaNkWeADaD-GO78BNY7HggF_42Zi0zwkGNlbeCDyrd5bRRsuaaP8U8KVwzGroLEdL47HfCbI-0M5z0tP30IDMzX8uNgRoDWLLTfkYWgu2a5MlQ22M0YnaXv39"/>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-[10px] flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8 (190)</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-low/95 text-secondary text-label-sm text-[10px] font-semibold">
+              Single Origin
+            </div>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary leading-tight">Cold Brew Reserve</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">18hr steep, cacao notes</p>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.80</span>
+<button aria-label="Add Cold Brew Reserve" class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="triggerToast('Cold Brew Reserve added to cart!')">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Pistachio Brioche Bun -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-[0_4px_16px_rgba(59,36,28,0.05)]">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Warm golden baked brioche bun topped with crushed emerald green pistachios and glossy caramel glaze on a handmade natural terracotta baking dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0udxI9HEmHKH87qntLJDE0MHCtrCtFcb9ymf0IEB17JVtEy-r-Xu00sNxiUy02gApgTiEMRk0rGluHPRvuI1kMJ6jvCE8GFFCULqXb3epkBSoyGD_8vQYyY_Ph3mZdvhmnFuahHOHCmut93AG6Hmv9VkNNnYBaiUvosaw-F2_Qt7S3WU8EYjoUIDBYICt1cgtIJS5n1Fk4kEoyFE0g0G1zRUmcUQYKYSQPdSiOu_ZVXFJfKdlSMFA"/>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-[10px] flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (410)</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed-dim/40 text-on-secondary-fixed-variant text-label-sm text-[10px] font-semibold">
+              Fresh Baked 7 AM
+            </div>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary leading-tight">Pistachio Brioche</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Sicilian pistachio butter</p>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.20</span>
+<button aria-label="Add Pistachio Brioche" class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="triggerToast('Pistachio Brioche added to cart!')">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Flat White -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-[0_4px_16px_rgba(59,36,28,0.05)]">
+<div>
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Artisanal flat white in a warm earthy ceramic cup with intricate rosetta latte art on glossy microfoam, surrounded by toasted coffee beans on linen cloth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSXNOxgF85lG5G7WKZ2fmshD_zAu2Cqd3a-en0_He-bRszJkGpmeeNcBBugrVZXiceFCGovCKC5MrVG5Xl5H5fphah-qwddnyHGFkAV-fBq94RAN-UeiWH8WUg5bzqYXmlEXzhJpQgGoskDSGupYnYFD6_rVSGEqii2IQ_pDRLJPL4J2PTiv-Ux4wJVLUlyG_53VyxnLCB0FDCoYsET2QOdDPGLSw_R3FuI5c6PSSY8ybmmz1vM1pz"/>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface/90 backdrop-blur-sm text-primary font-label-sm text-[10px] flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (240)</span>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-low/95 text-secondary text-label-sm text-[10px] font-semibold">
+              Silky Microfoam
+            </div>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary leading-tight">Flat White</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">Ristretto shots &amp; microfoam</p>
+</div>
+<div class="flex items-center justify-between mt-3 pt-2">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.50</span>
+<button aria-label="Add Flat White" class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 transition-transform shadow-sm" onclick="triggerToast('Flat White added to cart!')">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Made for You Strip -->
+<section class="px-margin my-3">
+<div class="flex items-center justify-between mb-2.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">favorite</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Made for Sarah</h3>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Based on your tastes</span>
+</div>
+<!-- Personalized Recommendation Card -->
+<div class="p-4 rounded-xl bg-surface-container-low shadow-[0_4px_16px_rgba(59,36,28,0.04)] flex items-center justify-between gap-3">
+<div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Iced Oat Vanilla Cortado served in a modern double-walled glass with rich golden crema and visible layers of oat milk, warm amber morning kitchen counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKZBe_aPwkdfHtxqu_yXOjpisndLe70-Q80M3FHjFfHHOijLstJn9lryGAYN6iPfM-nrqGvPsU4vyGeIu5O_r1VHpiGHuRrr6hrCeEehsbnfpvrPxFKb1J6hT1vgU0snY7dYMxBiCdUxvt8VpmCBPBcgpGuditZaWClYzw5W3KRAyuABnzl8N4cmKnpTmcFwkc0mO7lUTPCvXdJu2NT75JWN9BTfSTNvnJsiUwU2U1gedjcfvzR4wS"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/60 text-secondary font-label-sm text-[10px] font-bold uppercase">Smooth Everyday</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary truncate mt-0.5">Iced Oat Vanilla Cortado</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Your signature smooth oat preference</p>
+</div>
+<div class="flex flex-col items-end gap-1.5">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.10</span>
+<button class="h-8 px-3 rounded-full bg-primary text-on-primary font-label-sm text-label-sm active:scale-95 transition-transform flex items-center gap-1" onclick="triggerToast('Iced Oat Cortado added!')">
+<span>Reorder</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Dynamic Toast Container (Demo Feedback) -->
+<div class="fixed bottom-20 left-4 right-4 z-50 transform translate-y-32 opacity-0 pointer-events-none transition-all duration-300 ease-out" id="toast-bar">
+<div class="flex items-center justify-between px-4 py-3 rounded-full bg-primary text-on-primary shadow-[0_12px_28px_rgba(59,36,28,0.25)]">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-md text-label-md text-on-primary font-medium" id="toast-message">Item added to cart!</span>
+</div>
+<a class="font-label-md text-label-md text-secondary-fixed hover:underline font-bold flex items-center gap-1" data-path="cart" href="#">
+<span>View Cart (3)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  let toastTimer;
+  function triggerToast(msg) {
+    const toast = document.getElementById('toast-bar');
+    const toastMsg = document.getElementById('toast-message');
+    if (!toast) return;
+
+    if (msg) toastMsg.textContent = msg;
+
+    clearTimeout(toastTimer);
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(59,36,28,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">coffee</span><span class="font-label-sm text-label-sm mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="expert-preferences" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">psychology</span><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-secondary-fixed-dim ring-2 ring-surface"></span></div><span class="font-label-sm text-label-sm mt-0.5">Expert</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="tracking" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

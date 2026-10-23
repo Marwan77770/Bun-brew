@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1d1c16", "surface-dim": "#ded9d1", "on-secondary": "#ffffff", "on-primary": "#ffffff", "tertiary": "#251000", "tertiary-container": "#432100", "surface-variant": "#e7e2d9", "primary-container": "#3b241c", "on-error-container": "#93000a", "surface-container-low": "#f8f3ea", "on-background": "#1d1c16", "error": "#ba1a1a", "on-primary-container": "#ab897e", "tertiary-fixed-dim": "#fab983", "error-container": "#ffdad6", "on-secondary-container": "#7a5840", "outline-variant": "#d4c3be", "secondary-fixed-dim": "#eabda0", "on-primary-fixed-variant": "#5b4037", "surface-container": "#f2ede4", "surface-container-highest": "#e7e2d9", "tertiary-fixed": "#ffdcc2", "secondary": "#79573f", "outline": "#827470", "surface-bright": "#fef9f0", "background": "#fef9f0", "inverse-surface": "#32302b", "surface-tint": "#75584e", "on-secondary-fixed-variant": "#5f402a", "on-tertiary": "#ffffff", "on-surface-variant": "#504441", "primary-fixed": "#ffdbcf", "on-tertiary-container": "#be8453", "surface": "#fef9f0", "primary-fixed-dim": "#e4beb2", "on-error": "#ffffff", "inverse-on-surface": "#f5f0e7", "inverse-primary": "#e4beb2", "secondary-container": "#ffd1b3", "on-tertiary-fixed": "#2e1500", "secondary-fixed": "#ffdcc6", "primary": "#241009", "surface-container-high": "#ece8df", "on-tertiary-fixed-variant": "#683c11", "on-secondary-fixed": "#2d1604", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#2b160f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-md": "1rem", "space-xl": "2rem", "margin": "1.25rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(59,36,28,0.05)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="BUN &amp; BREW Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UJA7xrFu5yCQuE61diKIbvQQ4yMou6JTkku76MhLKeigpHmlvzDZ9uDCvDJkldaqv5pr-WbV43ZS2-PAuXpxTTO-6CJqMyKkFDc5ed6U_ue2-Z5S6g5_7_CNc9OyQ9sK9n3kJFjnk8yATuYD0PzN2PhJeadOjgD2hVlHhqj6Cl6beftAK9_N95ahrT1krRW2VQ6TpkkTcPHaySkJiG_NQ3PvR6BEAcc8nwBLm7QMPbkLZXvyazAdV4uho"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">BUN &amp; BREW</span><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase leading-none mt-0.5">Artisanal Roastery</span></div></div><div class="flex items-center gap-space-sm"><a class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low text-primary active:scale-95 transition-transform" data-path="cart" href="#"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-[18px] text-center font-bold">2</span></a><a class="w-11 h-11 rounded-full p-0.5 bg-surface-container-high flex items-center justify-center active:scale-95 transition-transform" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAOF_C9HQnN2247kwNzCaJEYxae-kxTE2Gaj30xuSmoF6P0tnmwAO6IlyUh7pD13jNFHnKxLJLfq0my7IOlEoNfuPD8Qup8pKDfsMm2QJPIefmcjR9Lt5rdXEQqSffdHcq6dtImBpc1TfBUZ1Awn5TjSkGrWwm8v31TO7Hn-6g5yx8QUJhuuJKmyKj7HmQXg_ieJLM0FaHBhOa50lQmcNCF3ICfD8yB6eUj6BWL5ws0SWXURqusnzk"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Header Title Section -->
+<section class="px-margin pt-4 pb-2">
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Our Menu</h1>
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container" id="items-counter">15 crafted items</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Handcrafted specialty drinks &amp; artisanal bakery freshly prepared to order.</p>
+</section>
+<!-- Live Search & Filter Bar -->
+<section class="px-margin pt-2 pb-3">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-on-surface-variant pointer-events-none text-[22px]">search</span>
+<input class="w-full h-12 pl-12 pr-10 rounded-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-md transition-all outline-none" id="menu-search-input" placeholder="Search coffee, tea, bakery..." type="text"/>
+<button class="hidden absolute right-3 w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-90 transition-all" id="clear-search-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</section>
+<!-- Quick Category Chips -->
+<section class="w-full overflow-x-auto no-scrollbar px-margin pb-3 pt-1">
+<div class="flex items-center gap-2 min-w-max" id="category-track">
+<button class="cat-pill active flex items-center gap-1.5 px-4 h-9 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" data-cat="all">
+<span>All</span>
+<span class="text-[11px] opacity-80">(15)</span>
+</button>
+<button class="cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-cat="hot">
+<span>Hot Coffee</span>
+</button>
+<button class="cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-cat="iced">
+<span>Iced Drinks</span>
+</button>
+<button class="cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-cat="frappes">
+<span>Frappes</span>
+</button>
+<button class="cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-cat="bakery">
+<span>Bakery</span>
+</button>
+<button class="cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-cat="sandwiches">
+<span>Sandwiches</span>
+</button>
+</div>
+</section>
+<!-- Secondary Interactive Filter & Sort Drawer Toggles -->
+<section class="px-margin pb-3">
+<div class="flex items-center justify-between gap-2">
+<!-- Sort Selector Dropdown -->
+<div class="relative flex-1">
+<select class="w-full h-10 pl-3 pr-8 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md appearance-none outline-none active:scale-[0.98] transition-all cursor-pointer" id="sort-selector">
+<option value="recommended">Sort: Recommended</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+<option value="popular">Most Popular</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Quick Filter Tray Toggle Button -->
+<button class="flex items-center gap-1.5 h-10 px-4 rounded-full bg-surface-container-low text-primary font-label-md text-label-md hover:bg-surface-container active:scale-95 transition-all" id="toggle-filter-tray-btn">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filters</span>
+<span class="hidden min-w-[18px] h-[18px] px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] items-center justify-center font-bold" id="active-filter-badge">0</span>
+</button>
+</div>
+<!-- Collapsible Advanced Micro-Filter Panel -->
+<div class="hidden flex-col gap-3 mt-3 p-3.5 rounded-xl bg-surface-container-low transition-all" id="filter-panel">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">Preferences</span>
+<button class="text-secondary font-label-sm text-label-sm hover:underline" id="reset-filters-btn">Reset all</button>
+</div>
+<!-- Temperature Chips -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Temperature</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="temp-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm" data-temp="all">All</button>
+<button class="temp-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-temp="hot">🔥 Hot</button>
+<button class="temp-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-temp="iced">❄️ Iced</button>
+</div>
+</div>
+<!-- Dietary Chips -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dietary Preference</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="diet-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-diet="veg">Vegetarian</button>
+<button class="diet-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-diet="oat">Oat Milk Ready</button>
+<button class="diet-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-diet="dairyfree">Dairy Free</button>
+</div>
+</div>
+<!-- Caffeine Level -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Caffeine Level</span>
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="caff-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm" data-caff="all">Any</button>
+<button class="caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-caff="high">High</button>
+<button class="caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-caff="med">Medium</button>
+<button class="caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-caff="low">Low</button>
+<button class="caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm" data-caff="decaf">Decaf</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid (2 columns on mobile) -->
+<section class="px-margin pt-1">
+<div class="grid grid-cols-2 gap-3" id="product-grid">
+<!-- Item 1: Espresso -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="high" data-cat="hot" data-diet="dairyfree,veg" data-name="Espresso" data-price="3.50" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Artisanal ceramic cup filled with a rich espresso double shot, featuring thick hazelnut crema on top, natural cafe morning lighting, warm ambient earth tones, shallow depth of field, food photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmu_miWB_wg-za8akUQjJmjJkfGrQWUhFak3ffKy9kZQvkOv5uQ1It1DmxjylIICYI7xN50TyoNkZL2d7LKkmuhprMi8t2PTlW1S8gZ10CUoyolnVlIP7PAt4hEcF5m3wElrZczD41xkg8KsqfiCQbVP0gxvrF4_aWgy0UfB0Mys7LefYa7y-uo9NT1OwSPBmfU-7jEMWVum9dybCs29kb3dNUq8X29Xp4SNGbHGAa34e6DoYKzLCf"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/70 backdrop-blur-sm text-on-primary font-label-sm text-[10px]">🔥 Double Shot</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Espresso</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Bold double shot, rich dense hazelnut crema.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$3.50</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Espresso">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Americano -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="high" data-cat="hot,iced" data-diet="dairyfree,veg" data-name="Americano" data-price="3.80" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="A clean rustic mug of rich dark hot Americano coffee with subtle reflections on dark surface, minimalist specialty coffee setting, cozy warm tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjSltZq6lwWvT5RKC88CutvsYztZlLGDydQmgmg8swUPDhM7GYFbV7UO9-F91P5L-ZSv6ZnikHOYp5OuqSnKgDLNbRaDTqixnI9WJmVLH-qyxi6eTHc8pIDseR5YfVqI4sk6PSpk716q8Ix7nvHwgVWrpWDDRhHFsNMgNS_BrwNURAOGcNBfp7IfcmkT2tD2m7BsrlgB32bwa_Ffw4KAloQo1b1rLI-4CdgquVLefuHDcotGvVdlQA"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-on-surface font-label-sm text-[10px]">Hot/Iced</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Americano</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Clean double shot gently lengthened with hot water.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$3.80</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Americano">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Cappuccino -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="hot" data-diet="veg,oat" data-name="Cappuccino" data-price="4.50" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Warm ceramic cup with velvety cappuccino adorned with delicate latte art rosetta on top, warm morning steam rising, soft cream and brown aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0pm9viORIt8ImTlWbAGl_-j8uir_H5Fq8TsQpnDp05TIV7dNF1iMQYVvFFs2jnuo49wOkTT2S5cbnnwLvoPUPtS0Zfbbl3mjKu8wjg5GJilgN58L6W6RAAqOM6WaxkJW5jUdx0X5BlJa5TlkwBhLWbStfzEEZYKIkEYlSNtUYv2CBXl6EBSRzHmWgcN7IvdOvzz3Y04DOhMQTZsL7moLrXuX1tFa1DIVq7pBEiYpE5YvjjjERGs40"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/70 text-on-primary font-label-sm text-[10px]">Foamy</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Cappuccino</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Balanced espresso, steamed milk &amp; deep velvety foam.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.50</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Cappuccino">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Caffè Latte -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="hot" data-diet="veg,oat" data-name="Caffè Latte" data-price="4.80" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Overhead view of a smooth Caffè Latte in handcrafted stoneware mug with crisp swan latte art, rich microfoam, cozy roastery cafe interior backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1sU2VC4zTgVEMjwrr3vnG1DtFd8xFp7cdgmI-g6Gg8pmDiCI0gvDGJjxywEgdJndOoBYBZlIBaWHrWHzCkvVO-prBtNe3ry4cZyWkJyQrCTlu8c_k6Pv_pwt9NROhsQm94MPXUli7mCi5P3QXCp7xCPHin9qtYa-tL86EUCkReBPGTmwDTR8f_Qnz62vWrpOm3F-bwXmS29xnJSUQk0SDjSbuPHOLWhvVVofSF2gzK6b-DJPftc9"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Popular</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Caffè Latte</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Silky steamed milk &amp; signature house espresso blend.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.80</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Caffè Latte">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Flat White -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="high" data-cat="hot" data-diet="veg,oat" data-name="Flat White" data-price="4.75" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Artisanal flat white in a ceramic tumbler, thin layer of microfoam with glossy surface texture, coffee bar environment with warm wooden tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1wI0M9NyFspKIrq0j6m96v1NWkQEtpB5gA0ua4xqvEhwbNVHTbDOavDXG-JNyijO-A5GKfWDp0ItN7loxYyLRrr1a82vJ5pHPPSBQseOUOMMkiNUmPe8r-e_j0EyQBcsd_ODVlLV1gmsF3I7gpjpuZE8j4LUXJkcY_H9hHHr8tQ43ZWuwNN7m9KsyVnROvnR1SYo-3GfGxJtQhTdJ_1iboxWY0Vuj2ztB1wKv8QiZ_j6lDt6MvvK"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-on-surface font-label-sm text-[10px]">Ristretto</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Flat White</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Double ristretto &amp; velvety tight microfoam.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.75</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Flat White">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Spanish Latte -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="hot,iced" data-diet="veg" data-name="Spanish Latte" data-price="5.50" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Layered Spanish Latte served in a transparent glass cup showing condensed milk bottom, rich espresso center, and velvety steamed milk foam on top." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeLzsUTmlsLTtJG-RiMEDHMUkBIWc0dx-mujnj_QOn0HKJneBo_6MKQ58kxmHF8vbOB0Gjqih_nj7eRYmYMlflaaxmQsOHriTAmcvChxtM33rDRMhpd4HDl0uDquIDbZd3cAPUQhnorrQx7Lry8-Sxha3WQVfHYtVaq-PZ6PvnJalZtE5D3iYXGfil16deTxqL2IFUsQzrqtPe7M6c8OTlWUEFubMG7Y6iS8AYb37KLnd4msN5HFnM"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Sweet &amp; Rich</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Spanish Latte</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Sweet condensed milk, espresso &amp; steamed whole milk.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.50</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Spanish Latte">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 7: Caramel Macchiato -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="hot,iced" data-diet="veg" data-name="Caramel Macchiato" data-price="5.25" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Caramel Macchiato topped with a crosshatch pattern of amber caramel sauce drizzle on dense milk foam, warm sunlight reflections, cozy coffee shop vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJPu4rwrShjRHKyMLU3R5xY5tsBtZPcIfM9tT-tdZ0D_aXxi0uxz8TByiNyPBFwo1BwZqW1Lk1GmmrV-zI2h7sg_28kKLad6mmECZi0taHjfOpUYL0mclsD4o65XIsNpWj_1u9YaPGf_9EAs26u5oQBdgbh1CCHE0jC5U-fnIOYA-NoeFe7HqJrYtpSKAPYDGHMfaCtyO6DQUKqp0ksczciN7_lLcdtmtZBcnUu5mfODRN-k9zWJ67"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Caramel Drizzle</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Caramel Macchiato</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Madagascar vanilla, espresso, rich caramel drizzle.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.25</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Caramel Macchiato">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 8: Mocha -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="hot" data-diet="veg,oat" data-name="Mocha" data-price="5.20" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Decadent artisanal Mocha in a matte black ceramic mug, topped with organic dark chocolate shavings and cocoa dusting, warm ambient interior." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDybAMkRhMo_ZtaU87cY6glkKVJFv90Y_Gg8vJH4pSljOoTDvFzz8RdUnaI0ewHGgf1ynNw6i-9H0vBUzR7xwK3rhzJhwi2-LeW276ey8u5-aoRYKEIhw_aspE8rGMbqi7hM66ZwFLSCgZgq8MaOm-DlaMJ9ylmInJsrARwdQglnkZRc6BQ5NJ20yzJORZ310w49cf64EC-p1HImExgN16_B0lPAxe5M8b2XhdpF9qf1E7CFBXhNP7w"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px]">70% Cacao</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Mocha</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Artisanal single-origin chocolate, espresso &amp; foam.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.20</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Mocha">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 9: Iced Latte -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="iced" data-diet="veg,oat" data-name="Iced Latte" data-price="4.95" data-temp="iced">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Chilled Iced Latte in tall ribbed glass showing dramatic espresso swirl mixing into cold milk with crystal clear ice cubes, condensation on glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByRND6MkeewErKObVqUTd4DmE-YrrKQ-UAEO7ArrY1TAsKcAmQxcU4w8_iEKXTnx5CUdQwpWUNMbVGMeOazBE7qFh0blnGtQpECFy6G0X3YdJuKLwEe73BYA9bXCL0Gglo6LrUqkc84Q0hntMGG3cnymD4ED83-NPc7Kr58NJRwxsoteuVdQuNQ0aW9IeFt1JAO7w0cIytvpAqW8FJTwtmmm5ItpYIahYjXZHI1JsCf_qfnoBjMXR8"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-on-surface font-label-sm text-[10px]">❄️ Chilled</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Iced Latte</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Chilled creamy milk, double shot over crystal ice cubes.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.95</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Iced Latte">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 10: Cold Brew -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="high" data-cat="iced" data-diet="dairyfree,veg" data-name="Cold Brew" data-price="4.85" data-temp="iced">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Rich amber-black Cold Brew coffee in a whiskey tumbler with large artisanal ice cube, bright studio morning light with botanical shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp8eg6CkIQxILXgQj1mTyzYmb_ERXjRlQLKgynXCmontcVY9Hc6tbw75DnOcZYd4MwVueghyQJe9WnaaRQluB5C5XwCyjX7s9jP8bpYNw5BPuZ-QuIwc86h_06S0haLSrzgj6XLAGI2BQQfSlKTMe3zSzp7d_KLOFGluPGFshFuts52bpfRYh23LUGuZo7wmCrNFAmWVT0VmgLgNgN88NGfzOWtRiCyD2sDsTqmU-W7bRWkEJPJjBv"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/70 text-on-primary font-label-sm text-[10px]">18-Hr Steep</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Cold Brew</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">18-hour slow steep single-origin Ethiopian Yirgacheffe.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$4.85</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Cold Brew">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 11: Matcha Latte -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="low" data-cat="hot,iced" data-diet="veg,oat,dairyfree" data-name="Matcha Latte" data-price="5.20" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Vibrant green ceremonial Matcha Latte served in handmade Japanese stoneware bowl with oat microfoam leaf art, warm bamboo mat background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3cYlk59Ib5IfCLugiLV77mV_wRsNDjbSRFdthxFVfVJOR8DWy5JTHcFOjHMzzgrVEkXOFmh5wWqKxDAhsW3-llC63DjjXo9Q9tznA8U8nubOH47dtg_BAmJzajSH-w7NBx7AWWojq5JUKWlhsZABUJ8MeaD9UiSejkvZTzH2dx3b_BA8rlOLfLLEnDh0CUJr3BP4_ESg52fRAkODTXVO6Iib_exwZ18ju-7GvCXNFNqLD-t2YGeEM"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-on-surface font-label-sm text-[10px]">Uji Ceremonial</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Matcha Latte</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Ceremonial grade Uji matcha whisked with silky oat milk.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.20</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Matcha Latte">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 12: Chocolate Frappe -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="med" data-cat="frappes,iced" data-diet="veg" data-name="Chocolate Frappe" data-price="5.80" data-temp="iced">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Blended chocolate frappe topped with whipped vanilla cream and dark mocha chocolate curls, chilled glass with frosty condensation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI-8jGLhvQOXEf0rxCh-CNTbEFYvzvM0I20GKikL3qeXZ6_lcaSxebFhs65vBoTtedPmCrn-LzmxLG61lAuV5F6A6R4AWjuKJIKnxLxGVpdy4XgKVxh80Y4TRrKggynxFFCMdlT1il775ha7HHTuYdfmnPSU0xeVYeqwJvapaPF7I2aE1Zm12_igKzKGZpC3UzBRWy_caXqbU3wctAe9GFouoDdB7mZ7R8zzTuFpd_gk09AK2HVJGb"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Blended</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Chocolate Frappe</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Blended Belgian chocolate, espresso &amp; mocha drizzle.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$5.80</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Chocolate Frappe">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 13: Butter Croissant -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="decaf" data-cat="bakery" data-diet="veg" data-name="Butter Croissant" data-price="3.75" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Golden brown flaky French butter croissant on artisanal ceramic baking plate, buttery flaky crumbs scattered gently, warm bakery oven lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkBc-PZ5PLSWPlokzcHy1E3lvV63nLi8dNtnvTmjFbYGTycblMUNMlob60a8pWw0e1-YMvhdNWyL_Nh6nOZtvmu5kaSIcuV9QtG1wA5Maq0KYsXoS0uRjquY5klMsGqkYAmRdW-qpQ93LHfDWXa0FzWEIZzVLL8VFAmowqLYfNws-BM_Lyopav3E52bgqkYU8yZDjiVSvXxrtH2MxPpwLr_vMtlJx6BgCVV7-Q5Gmq05cyd6oX8nuY"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-high/90 text-on-surface font-label-sm text-[10px]">Baked Daily</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Butter Croissant</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Flaky golden French pastry made with pure Normandy butter.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$3.75</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Butter Croissant">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 14: Blueberry Muffin -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="decaf" data-cat="bakery" data-diet="veg" data-name="Blueberry Muffin" data-price="3.95" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Freshly baked artisan blueberry muffin bursting with ripe dark blueberries and streusel crumble top, rustic parchment paper wrapping, comforting bakery scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM2kBUeVA3r1bxeQRH1GkQBU7DUCbWkflP1KM-hsHUYjwzSmKYPiTIDV-zi8PLossQzR70TzByUwS5Fhrl5pKEatZUOAhxMc4QF4UwS3xFU14RR3gbUBoXjUp8ZLgVJxdTE5IjOhB0FKN5RI1bM1Lb79gIm5hb_-HSH5oFBsm_s6u8e-ZWppBupUdvrpFSGqGDaXdfZKVhgjR6ah9FrasH-qdTYl0grEH5XFLoZPs13tOn8XIt28Oa"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[10px]">Fresh Harvest</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Blueberry Muffin</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Freshly baked daily with wild organic blueberries &amp; streusel.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$3.95</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Blueberry Muffin">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+<!-- Item 15: Smoked Turkey & Cheese Bagel -->
+<div class="product-card flex flex-col justify-between p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative" data-caff="decaf" data-cat="sandwiches" data-diet="" data-name="Smoked Turkey &amp; Cheese Bagel" data-price="6.50" data-temp="hot">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low mb-2.5">
+<img class="w-full h-full object-cover" data-alt="Toasted artisan bagel sandwich cut in half showing layered smoked turkey breast, melted sharp cheddar, and fresh greens, served on wooden cutting board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ6C7AaUM_MjhQCs2UQsUtjK2x3ERiqjaElZUH8NlapYNvXi0A52hLE2Fp1b8sSSWn_A6H6I8Rf5aO0uztV3m10fHv8ahFmD2s2O86zmw9g_50L7UX-Pk5RAoHr00xV4_qjf8KNJCJhPQ8AXYtmrhZabzy-eT0iyMy5KBFcnFdbtr1v63Q2lHhs36UZcmkvG7rdWXIqXyczqGxMhrjuaKCIBTAOmdKUZlIgRqaP4jXyZAjZuMQrFUx"/>
+<button class="fav-btn absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Warm Toasted</span>
+</div>
+<div class="flex flex-col flex-1">
+<h2 class="font-headline-sm text-headline-sm text-primary leading-tight line-clamp-1">Turkey &amp; Bagel</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5 mb-2">Toasted artisan bagel, smoked turkey breast, cheddar cheese.</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">$6.50</span>
+<button class="add-to-cart-btn w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center active:scale-90 hover:bg-primary transition-all" data-title="Smoked Turkey Bagel">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Empty Results State (hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-12 px-margin text-center" id="no-results-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[32px]">coffee_maker</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">No sips found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[240px] mt-1 mb-4">Try clearing your search terms or relaxing your active dietary filters.</p>
+<button class="px-5 h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-all" id="empty-reset-btn">Clear All Filters</button>
+</div>
+</section>
+<!-- Interactive Customization Bottom Drawer Modal (Hidden by default) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="item-modal-overlay">
+<div class="fixed bottom-0 left-0 right-0 max-w-[560px] mx-auto bg-surface-container-lowest rounded-t-[28px] p-margin pb-safe shadow-2xl transform translate-y-full transition-transform duration-300 flex flex-col gap-4" id="item-modal-sheet">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant self-center mb-1"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold" id="modal-tag">Artisanal Brew</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold" id="modal-title">Item Title</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant" id="modal-desc">Detailed item notes and roastery description.</p>
+<!-- Customization: Milk Choice -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary">Milk Preference</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="modal-option-btn active py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center">Whole Milk</button>
+<button class="modal-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center">Oat Milk (+0.70)</button>
+<button class="modal-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center">Almond (+0.70)</button>
+</div>
+</div>
+<!-- Customization: Sweetness -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-primary">Sweetness Level</span>
+<div class="grid grid-cols-4 gap-2">
+<button class="sweet-option-btn active py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center">0%</button>
+<button class="sweet-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center">25%</button>
+<button class="sweet-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center">50%</button>
+<button class="sweet-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center">100%</button>
+</div>
+</div>
+<!-- Action row inside Modal -->
+<div class="flex items-center gap-3 pt-2">
+<div class="flex items-center justify-between w-28 h-12 px-3 rounded-full bg-surface-container-low text-primary font-bold">
+<button class="text-on-surface-variant active:scale-90 text-[18px]" id="modal-qty-minus">-</button>
+<span id="modal-qty">1</span>
+<button class="text-on-surface-variant active:scale-90 text-[18px]" id="modal-qty-plus">+</button>
+</div>
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-between px-6 active:scale-95 transition-all" id="modal-confirm-add">
+<span>Add to Order</span>
+<span id="modal-price">$4.80</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Toast notification banner for cart additions -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-primary-container text-on-primary-container shadow-xl opacity-0 pointer-events-none transition-all duration-300" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md text-white font-medium" id="toast-text">Added to order</span>
+</div>
+</div>
+<script>
+  (function initMenuInteractions() {
+    // State management
+    const state = {
+      search: '',
+      category: 'all',
+      sort: 'recommended',
+      temp: 'all',
+      caff: 'all',
+      activeDiet: new Set()
+    };
+
+    const searchInput = document.getElementById('menu-search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+    const categoryTrack = document.getElementById('category-track');
+    const sortSelect = document.getElementById('sort-selector');
+    const filterTrayBtn = document.getElementById('toggle-filter-tray-btn');
+    const filterPanel = document.getElementById('filter-panel');
+    const filterBadge = document.getElementById('active-filter-badge');
+    const resetFiltersBtn = document.getElementById('reset-filters-btn');
+    const emptyResetBtn = document.getElementById('empty-reset-btn');
+    const productGrid = document.getElementById('product-grid');
+    const itemsCounter = document.getElementById('items-counter');
+    const noResults = document.getElementById('no-results-state');
+
+    // Cart Toast & Badging
+    const toast = document.getElementById('toast-notification');
+    const toastText = document.getElementById('toast-text');
+
+    function showToast(msg) {
+      toastText.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        toast.classList.remove('opacity-100');
+      }, 2000);
+    }
+
+    // Modal elements
+    const overlay = document.getElementById('item-modal-overlay');
+    const sheet = document.getElementById('item-modal-sheet');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalPrice = document.getElementById('modal-price');
+    const modalQty = document.getElementById('modal-qty');
+    const confirmAdd = document.getElementById('modal-confirm-add');
+    let currentModalItem = null;
+    let modalQuantity = 1;
+
+    function openModal(card) {
+      currentModalItem = {
+        name: card.dataset.name,
+        price: parseFloat(card.dataset.price),
+        desc: card.querySelector('p').textContent
+      };
+      modalQuantity = 1;
+      modalQty.textContent = modalQuantity;
+      modalTitle.textContent = currentModalItem.name;
+      modalDesc.textContent = currentModalItem.desc;
+      modalPrice.textContent = `$${(currentModalItem.price * modalQuantity).toFixed(2)}`;
+
+      overlay.classList.remove('hidden');
+      setTimeout(() => {
+        overlay.classList.remove('opacity-0');
+        sheet.classList.remove('translate-y-full');
+      }, 10);
+    }
+
+    function closeModal() {
+      overlay.classList.add('opacity-0');
+      sheet.classList.add('translate-y-full');
+      setTimeout(() => {
+        overlay.classList.add('hidden');
+      }, 300);
+    }
+
+    closeModalBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+
+    document.getElementById('modal-qty-plus').addEventListener('click', () => {
+      modalQuantity++;
+      modalQty.textContent = modalQuantity;
+      modalPrice.textContent = `$${(currentModalItem.price * modalQuantity).toFixed(2)}`;
+    });
+
+    document.getElementById('modal-qty-minus').addEventListener('click', () => {
+      if (modalQuantity > 1) {
+        modalQuantity--;
+        modalQty.textContent = modalQuantity;
+        modalPrice.textContent = `$${(currentModalItem.price * modalQuantity).toFixed(2)}`;
+      }
+    });
+
+    confirmAdd.addEventListener('click', () => {
+      showToast(`Added ${modalQuantity}x ${currentModalItem.name}`);
+      closeModal();
+    });
+
+    // Option selectors in Modal
+    document.querySelectorAll('.modal-option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.modal-option-btn').forEach(b => {
+          b.className = 'modal-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center';
+        });
+        btn.className = 'modal-option-btn active py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center';
+      });
+    });
+
+    document.querySelectorAll('.sweet-option-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.sweet-option-btn').forEach(b => {
+          b.className = 'sweet-option-btn py-2 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm text-center';
+        });
+        btn.className = 'sweet-option-btn active py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center';
+      });
+    });
+
+    // Favorites click handler
+    document.querySelectorAll('.fav-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFav = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFav) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-secondary');
+          btn.classList.add('text-primary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.remove('text-primary');
+          btn.classList.add('text-secondary');
+          showToast('Added to favorites');
+        }
+      });
+    });
+
+    // Direct Add-to-cart in Grid
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const title = btn.dataset.title;
+        btn.classList.add('scale-125');
+        setTimeout(() => btn.classList.remove('scale-125'), 180);
+        showToast(`Added ${title} to cart`);
+      });
+    });
+
+    // Product Card modal trigger
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('click', () => openModal(card));
+    });
+
+    // Toggle filter panel
+    filterTrayBtn.addEventListener('click', () => {
+      filterPanel.classList.toggle('hidden');
+      filterPanel.classList.toggle('flex');
+    });
+
+    // Filter computation & application
+    function applyFilters() {
+      const cards = Array.from(document.querySelectorAll('.product-card'));
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const cats = card.dataset.cat.split(',');
+        const temp = card.dataset.temp;
+        const caff = card.dataset.caff;
+        const diets = card.dataset.diet ? card.dataset.diet.split(',') : [];
+
+        // Search Match
+        const matchesSearch = !state.search || name.includes(state.search);
+
+        // Category Match
+        const matchesCat = state.category === 'all' || cats.includes(state.category);
+
+        // Temperature Match
+        const matchesTemp = state.temp === 'all' || temp === state.temp;
+
+        // Caffeine Match
+        const matchesCaff = state.caff === 'all' || caff === state.caff;
+
+        // Dietary Match
+        let matchesDiet = true;
+        if (state.activeDiet.size > 0) {
+          state.activeDiet.forEach(d => {
+            if (!diets.includes(d)) matchesDiet = false;
+          });
+        }
+
+        const isVisible = matchesSearch && matchesCat && matchesTemp && matchesCaff && matchesDiet;
+        card.style.display = isVisible ? 'flex' : 'none';
+        if (isVisible) visibleCount++;
+      });
+
+      // Update counters & empty state
+      itemsCounter.textContent = `${visibleCount} item${visibleCount === 1 ? '' : 's'}`;
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+      }
+
+      // Update active filters badge
+      let activeFilterCount = 0;
+      if (state.temp !== 'all') activeFilterCount++;
+      if (state.caff !== 'all') activeFilterCount++;
+      activeFilterCount += state.activeDiet.size;
+
+      if (activeFilterCount > 0) {
+        filterBadge.textContent = activeFilterCount;
+        filterBadge.classList.remove('hidden');
+        filterBadge.classList.add('flex');
+      } else {
+        filterBadge.classList.add('hidden');
+        filterBadge.classList.remove('flex');
+      }
+    }
+
+    // Sort application
+    sortSelect.addEventListener('change', (e) => {
+      const val = e.target.value;
+      const cards = Array.from(document.querySelectorAll('.product-card'));
+
+      cards.sort((a, b) => {
+        const priceA = parseFloat(a.dataset.price);
+        const priceB = parseFloat(b.dataset.price);
+        if (val === 'price-asc') return priceA - priceB;
+        if (val === 'price-desc') return priceB - priceA;
+        if (val === 'popular') return a.dataset.name.localeCompare(b.dataset.name);
+        return 0; // recommended stays default
+      });
+
+      cards.forEach(card => productGrid.appendChild(card));
+    });
+
+    // Search events
+    searchInput.addEventListener('input', (e) => {
+      state.search = e.target.value.trim().toLowerCase();
+      if (state.search.length > 0) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+      applyFilters();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      state.search = '';
+      clearSearchBtn.classList.add('hidden');
+      applyFilters();
+    });
+
+    // Category Buttons
+    categoryTrack.querySelectorAll('.cat-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryTrack.querySelectorAll('.cat-pill').forEach(b => {
+          b.className = 'cat-pill flex items-center gap-1.5 px-4 h-9 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all';
+        });
+        btn.className = 'cat-pill active flex items-center gap-1.5 px-4 h-9 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all';
+        state.category = btn.dataset.cat;
+        applyFilters();
+      });
+    });
+
+    // Temperature Chips
+    document.querySelectorAll('.temp-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.temp-chip').forEach(b => {
+          b.className = 'temp-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+        });
+        btn.className = 'temp-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm';
+        state.temp = btn.dataset.temp;
+        applyFilters();
+      });
+    });
+
+    // Caffeine Chips
+    document.querySelectorAll('.caff-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.caff-chip').forEach(b => {
+          b.className = 'caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+        });
+        btn.className = 'caff-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm';
+        state.caff = btn.dataset.caff;
+        applyFilters();
+      });
+    });
+
+    // Dietary Multi-Select Chips
+    document.querySelectorAll('.diet-chip').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.dataset.diet;
+        if (state.activeDiet.has(val)) {
+          state.activeDiet.delete(val);
+          btn.className = 'diet-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+        } else {
+          state.activeDiet.add(val);
+          btn.className = 'diet-chip active px-3 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm';
+        }
+        applyFilters();
+      });
+    });
+
+    // Reset filters
+    function resetAllFilters() {
+      state.search = '';
+      searchInput.value = '';
+      clearSearchBtn.classList.add('hidden');
+      state.temp = 'all';
+      state.caff = 'all';
+      state.activeDiet.clear();
+
+      document.querySelectorAll('.temp-chip').forEach((b, i) => {
+        b.className = i === 0 ? 'temp-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm' : 'temp-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+      });
+
+      document.querySelectorAll('.caff-chip').forEach((b, i) => {
+        b.className = i === 0 ? 'caff-chip active px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm' : 'caff-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+      });
+
+      document.querySelectorAll('.diet-chip').forEach(b => {
+        b.className = 'diet-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm';
+      });
+
+      applyFilters();
+    }
+
+    resetFiltersBtn.addEventListener('click', resetAllFilters);
+    emptyResetBtn.addEventListener('click', resetAllFilters);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(59,36,28,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] transition-colors text-primary font-bold" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">coffee</span><span class="font-label-sm text-label-sm mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="expert-preferences" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">psychology</span><span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-secondary-fixed-dim ring-2 ring-surface"></span></div><span class="font-label-sm text-label-sm mt-0.5">Expert</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="tracking" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Orders</span></a><a class="flex flex-col items-center justify-center flex-1 py-1 min-h-[48px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>
